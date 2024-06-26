@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/toso
+
+idspace: TOSO
+base_url: /obo/toso
+
+products:
+- toso.owl: https://raw.githubusercontent.com/Tree-of-Sex/toso/main/toso.owl
+- toso.obo: https://raw.githubusercontent.com/Tree-of-Sex/toso/main/toso.obo
+
+term_browser: ontobee
+example_terms:
+- TOSO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Tree-of-Sex/toso/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Tree-of-Sex/toso/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/TOSO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Tree-of-Sex/toso/main/
+
