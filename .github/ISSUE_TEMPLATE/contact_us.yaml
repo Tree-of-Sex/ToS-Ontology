@@ -25,7 +25,7 @@ body:
     id: message
     attributes:
       label: Message
-      description: If you have a problem or feature request for a TOSO term, please create an issue on the respective GitHub page directly.
+      description: Please use the field below to reach out. If you have a problem or feature request for a TOSO term, please [create an issue on the respective GitHub page](https://github.com/Tree-of-Sex/toso/issues/new/choose) directly.
     validations:
       required: true
   - type: checkboxes
