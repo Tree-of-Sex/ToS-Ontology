@@ -1,0 +1,56 @@
+name: Tree of Sex Ontology (TOSO) - new term request
+description: For new term requests, please provide the following information
+title: '[Ex: Add new/existing term for sex chromosome]: '
+labels: ['user-request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time contribute to TOSO.
+  - type: checkboxes
+    id: TOSO
+    attributes:
+      label: In which category is your new term request?
+      description: See all ontology data change options at (https://github.com/Tree-of-Sex/toso/wiki/Categories-of-data-change)
+      options:
+        - label: new_definition
+        - label: existing_definition
+  - type: textarea
+    id: description
+    attributes:
+      label: Preferred term label
+      description: (e.g., Asplenia)
+  - type: textarea
+    id: description
+    attributes:
+      label: Synonyms
+      description: (e.g., Absent spleen)
+  - type: textarea
+    id: description
+    attributes:
+      label: Textual definition
+      description: the definition should be understandable even for non-specialists. Include a PubMed ID to refer to any relevant article that provides additional information about the suggested term.
+  - type: textarea
+    id: description
+    attributes:
+      label: Suggested parent term
+      description: Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/toso)c
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Attribution
+      description: If you would like a nanoattribution, please indicate your ORCID id
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow ToS and TOSO [Code of Conduct](https://github.com/Tree-of-Sex/toso/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
