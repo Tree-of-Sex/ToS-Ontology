@@ -1,4 +1,4 @@
-name: Tree of Sex Ontology (TOSO) - new term request
+name: "Tree of Sex Ontology (TOSO) - new term request"
 description: For new term requests, please provide the following information
 title: '[Ex: Add new/existing term for sex chromosome]: '
 labels: ['user-request']
@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for taking the time contribute to TOSO.
   - type: checkboxes
-    id: label
+    id: description
     attributes:
       label: In which category is your new term request?
       description: See all ontology data change options at (https://github.com/Tree-of-Sex/toso/wiki/Categories-of-data-change)
