@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for taking the time contribute to TOSO.
   - type: checkboxes
-    id: TOSO
+    id: label
     attributes:
       label: In which category is your new term request?
       description: See all ontology data change options at (https://github.com/Tree-of-Sex/toso/wiki/Categories-of-data-change)
