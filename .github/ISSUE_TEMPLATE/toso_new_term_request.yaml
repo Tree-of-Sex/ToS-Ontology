@@ -11,25 +11,32 @@ body:
     id: category
     attributes:
       label: In which category is your new term request?
-      description: See all ontology data change options at (https://github.com/Tree-of-Sex/toso/wiki/Categories-of-data-change)
+      description: See all data change workflows by ToS Ontology Operations Team at (https://github.com/Tree-of-Sex/ToS-Ontology/wiki/Data-change-workflows)
       options:
         - label: new_definition
         - label: existing_definition
+          required: true
   - type: textarea
     id: preferred
     attributes:
       label: Preferred term label
       description: (e.g., Asplenia)
+    validations:
+      required: true
   - type: textarea
     id: synonyms
     attributes:
       label: Synonyms
       description: (e.g., Absent spleen)
+    validations:
+      required: true
   - type: textarea
     id: definition
     attributes:
       label: Textual definition
       description: the definition should be understandable even for non-specialists. Include a PubMed ID to refer to any relevant article that provides additional information about the suggested term.
+    validations:
+      required: true
   - type: textarea
     id: parent
     attributes:
