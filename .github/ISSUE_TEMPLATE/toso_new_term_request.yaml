@@ -1,6 +1,5 @@
-name: "Tree of Sex Ontology (TOSO) - new term request"
-about: Add new/existing terms to the Tree of Sex Ontology (TOSO)
-description: For new term requests, please provide the following information
+name: "Tree of Sex Ontology (TOSO) - new term request" 
+description: 'Add new/existing terms to the Tree of Sex Ontology (TOSO).For new term requests, please provide the following information:'
 title: '[Ex: Add new/existing term for sex chromosome]: '
 labels: ['user-request']
 body:
