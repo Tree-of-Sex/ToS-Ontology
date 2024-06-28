@@ -2,7 +2,7 @@
 ![Build Status](https://github.com/Tree-of-Sex/toso/actions/workflows/qc.yml/badge.svg)
 # Tree of Sex ontology
 
-The Tree of Sex Ontology (TOSO) covers any trait related to reproduction included in the Tree of Sex database and will be constructed by the members of the Tree of Sex [Ititiative](https://treeofsex.sanger.ac.uk/) 
+The Tree of Sex Ontology (TOSO) covers any trait related to reproduction included in the Tree of Sex database and will be constructed by the members of the Tree of Sex [initiative](https://treeofsex.sanger.ac.uk/) 
 
 
 # General Introduction
@@ -15,29 +15,29 @@ ToS Ontology will be an “_application ontology_”, meaning it will aim to reu
 Primarily we would like the terms to be sourced from OBO Foundry ontologies - the starting place to look is [PATO](https://obofoundry.org/ontology/pato.html), [GO]() and then expand with other selected [OBO Foundry ontologies](https://obofoundry.org/).
 
 # Ontology Scope
-What is the domain that the ontology will cover? 
-_Any trait related to reproduction included in the Tree of Sex database_
+## What is the domain that the ontology will cover? 
+- _Any trait related to reproduction included in the Tree of Sex database_
 
-For what  we are going to use the ontology? 
+## For what  we are going to use the ontology? 
 - _Formalise concepts adopted by the ToS consortium and database_
 - _Data validation of the ToS database_
 - _Advanced browsing of the database using parent terms, synonyms and so on;_
 - _Aid selection of keywords by the Literature Search Operations Team_
 - _Facilitate the integration of fields and values by the Database Integration Operations Team_
 
-
-For what types of questions the information in the ontology should provide answers?
+## For what types of questions the information in the ontology should provide answers?
 - Reproductive biology
 - Sex determination systems
 
-
-Who will use and maintain the ontology?
+## Who will use and maintain the ontology?
+- TOSO is an open-source ontology
 - Public can suggest terms 
 - ToS Ontology Operations Team can revise
 - Anyone can join the ontology team
 
-
-More information can be found at http://obofoundry.org/ontology/toso
+## Additional Information
+- More information can be found at http://obofoundry.org/ontology/toso
+- Also visit the [Tree of sex website](https://treeofsex.sanger.ac.uk/) for consortium and database updates
 
 ## Versions
 
