@@ -16,28 +16,27 @@ body:
         - label: new_definition
         - label: existing_definition
   - type: textarea
-    id: description
+    id: preferred
     attributes:
       label: Preferred term label
       description: (e.g., Asplenia)
   - type: textarea
-    id: description
+    id: synonyms
     attributes:
       label: Synonyms
       description: (e.g., Absent spleen)
   - type: textarea
-    id: description
+    id: definition
     attributes:
       label: Textual definition
       description: the definition should be understandable even for non-specialists. Include a PubMed ID to refer to any relevant article that provides additional information about the suggested term.
   - type: textarea
-    id: description
+    id: parent
     attributes:
       label: Suggested parent term
       description: Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/toso)c
-
   - type: textarea
-    id: problem
+    id: attribution
     attributes:
       label: Attribution
       description: If you would like a nanoattribution, please indicate your ORCID id
