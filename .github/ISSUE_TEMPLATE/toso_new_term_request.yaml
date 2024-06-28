@@ -34,7 +34,7 @@ body:
     id: parent
     attributes:
       label: Suggested parent term
-      description: Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/toso)c
+      description: Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/toso)
   - type: textarea
     id: attribution
     attributes:
