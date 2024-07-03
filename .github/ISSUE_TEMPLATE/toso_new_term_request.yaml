@@ -28,8 +28,6 @@ body:
     attributes:
       label: Synonyms
       description: (e.g., Absent spleen)
-    validations:
-      required: true
   - type: textarea
     id: definition
     attributes:
