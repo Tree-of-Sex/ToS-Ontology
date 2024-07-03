@@ -22,8 +22,6 @@ Annotation(dcterms:title "Tree of Sex ontology")
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000003>))
-Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000004>))
-Declaration(NamedIndividual(<http://purl.obolibrary.org/obo/TOSO_0000002>))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -50,6 +48,10 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/GO_0005575> (cellular_component)
+
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0005575> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000000> (ToS1)
 
 AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/TOSO_0000000> "All original terms used by the first instance of the Tree of Sex database"@en)
@@ -72,25 +74,6 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000003> "2024-06-27T00:15:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000003> "New Term"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000003> <http://purl.obolibrary.org/obo/TOSO_0000001>)
-
-# Class: <http://purl.obolibrary.org/obo/TOSO_0000004> (cell structure)
-
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000004> <https://orcid.org/0000-0002-3112-0000>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000004> "2024-06-27T01:17:12Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000004> "cell structure"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000004> <http://purl.obolibrary.org/obo/TOSO_0000000>)
-
-
-############################
-#   Named Individuals
-############################
-
-# Individual: <http://purl.obolibrary.org/obo/TOSO_0000002> (testao1)
-
-AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000002> <https://orcid.org/0000-0002-3112-0000>)
-AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000002> "2024-06-27T00:03:43Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000002> "testao1"@en)
-ClassAssertion(<http://purl.obolibrary.org/obo/TOSO_0000000> <http://purl.obolibrary.org/obo/TOSO_0000002>)
 
 
 )
