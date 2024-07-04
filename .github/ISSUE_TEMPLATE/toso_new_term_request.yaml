@@ -37,7 +37,7 @@ body:
     id: Reference DOI if existing
     attributes:
       label: Reference
-      description: (e.g.: Grewal, S., Jia, S. Heterochromatin revisited. Nat Rev Genet 8, 35–46 (2007). https://doi.org/10.1038/nrg2008 )
+      description: (e.g., https://doi.org/10.1038/nrg2008 )
   - type: textarea
     id: definition
     attributes:
