@@ -1,6 +1,6 @@
 name: "Tree of Sex Ontology (TOSO) - new term request" 
 description: 'Add new/existing terms to the Tree of Sex Ontology (TOSO).For new term requests, please provide the following information:'
-title: '[Ex: Add new/existing term for sex chromosome]: '
+title: '[NTR:]: '
 labels: ['user-request']
 body:
   - type: markdown
@@ -15,19 +15,29 @@ body:
       options:
         - label: new_definition
         - label: existing_definition
-          required: true
+        - required: true
   - type: textarea
     id: preferred
     attributes:
       label: Preferred term label
-      description: (e.g., Asplenia)
+      description: (e.g., Chromosome)
     validations:
       required: true
   - type: textarea
     id: synonyms
     attributes:
       label: Synonyms
-      description: (e.g., Absent spleen)
+      description: (e.g., Nuclear Chromosome)
+  - type: textarea
+    id: IRI if existing
+    attributes:
+      label: ID
+      description: (e.g., GO:0005694)
+  - type: textarea
+    id: Reference DOI if existing
+    attributes:
+      label: Reference
+      description: (e.g.: Grewal, S., Jia, S. Heterochromatin revisited. Nat Rev Genet 8, 35–46 (2007). https://doi.org/10.1038/nrg2008 )
   - type: textarea
     id: definition
     attributes:
