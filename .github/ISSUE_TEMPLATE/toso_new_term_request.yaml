@@ -1,0 +1,61 @@
+name: "Tree of Sex Ontology (TOSO) - new term request" 
+description: 'Add new/existing terms to the Tree of Sex Ontology (TOSO).For new term requests, please provide the following information:'
+title: '[Ex: Add new/existing term for sex chromosome]: '
+labels: ['user-request']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time contribute to TOSO.
+  - type: checkboxes
+    id: category
+    attributes:
+      label: In which category is your new term request?
+      description: See all data change workflows by ToS Ontology Operations Team at (https://github.com/Tree-of-Sex/ToS-Ontology/wiki/Data-change-workflows)
+      options:
+        - label: new_definition
+        - label: existing_definition
+    validations:
+      required: true
+  - type: textarea
+    id: preferred
+    attributes:
+      label: Preferred term label
+      description: (e.g., Asplenia)
+    validations:
+      required: true
+  - type: textarea
+    id: synonyms
+    attributes:
+      label: Synonyms
+      description: (e.g., Absent spleen)
+  - type: textarea
+    id: definition
+    attributes:
+      label: Textual definition
+      description: the definition should be understandable even for non-specialists. Include a PubMed ID to refer to any relevant article that provides additional information about the suggested term.
+    validations:
+      required: true
+  - type: textarea
+    id: parent
+    attributes:
+      label: Suggested parent term
+      description: Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/toso)
+  - type: textarea
+    id: attribution
+    attributes:
+      label: Attribution
+      description: If you would like a nanoattribution, please indicate your ORCID id
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow ToS and TOSO [Code of Conduct](https://github.com/Tree-of-Sex/toso/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
