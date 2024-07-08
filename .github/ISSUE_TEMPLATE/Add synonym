@@ -1,0 +1,47 @@
+
+name: Add synonym
+description: Request a new synonym to be added an existing TOSO term.
+title: Request for new synonym [ADD NAME HERE]
+labels: [ synonym ]
+# assignees: ccaio
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a synonym be added to an existing ToS-Ontology term.
+  - type: input
+    id: Label
+    attributes:
+      label: ToSO term
+      description: ToSO term to which a synonym should be added.
+      placeholder: ex. meiosis
+    validations:
+      required: true
+  - type: input
+    id: synonyms
+    attributes:
+      label: Synonyms
+      description: Alternative term(s) or acroynymm for the term. Separate multiple synonyms by a comma.
+      placeholder:  ex. meiotic division, reduction cell division
+    validations:
+      required: false
+  - type: dropdown
+    id: synonym_type
+    attributes:
+      label: Synonym type
+      description: Please indicate if the synonym is exact, broad, narrow or related. See [here for more explanation of synonym scope](https://github.com/Tree-of-Sex/ToS-Ontology/wiki).
+      options:
+        - exact
+        - broad
+        - narrow
+        - related
+    validations:
+      required: false
+  - type: textarea
+    id: comments
+    attributes:
+      label: Additional comments
+      description: |
+        Please provide any additional comments here. If you requested multiples synonyms that are not all the same scope (eg they are not all exact synonyms, please indicate that in the comments). 
+    validations:
+      required: false
