@@ -1,6 +1,6 @@
 name: "Tree of Sex Ontology - TOSO term request" 
 description: 'Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information:'
-title: NTR:[ADD NAME HERE]
+title: NTR [ ADD NAME HERE ]
 labels: [ new-term-request ]
 body:
   - type: markdown
