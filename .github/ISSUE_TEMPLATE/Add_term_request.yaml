@@ -1,5 +1,5 @@
 name: Add term- Request a New Ontology Term
-description: Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information:
+description: Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information.
 title: NTR [ ADD NAME HERE ]
 labels: [ new-term-request ]
 body:
@@ -11,7 +11,7 @@ body:
     id: category
     attributes:
       label: In which category is your new term request?
-      description: See all data change workflows by ToS Ontology Operations Team at (https://github.com/Tree-of-Sex/ToS-Ontology/wiki/Data-change-workflows)
+      description: See all data change workflows by ToS Ontology Operations Team at (https://github.com/Tree-of-Sex/ToS-Ontology/wiki/Data-change-workflows).
       options:
         - label: new_definition
         - label: existing_definition
