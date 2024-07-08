@@ -69,7 +69,15 @@ body:
     attributes:
       label: Children term(s)
       description: List any existing terms that should be classified underneath this new proposed term, if applicable. Provide the ID and label.
-      placeholder: ex. MONDO:0100067 childhood spindle cell rhabdomyosarcoma
+      placeholder: e.g., MONDO:0100067 childhood spindle cell rhabdomyosarcoma
+    validations:
+      required: false
+  - type: textarea
+    id: taxonomy
+    attributes:
+      label: Taxon-restricted
+      description: Is the term taxonomically restricted? Please indicate if there are any taxonomic constrains for the term as defined here. Include the ncbi taxonomy ID when referring to a specific taxon group.
+      placeholder: e.g., plant-specific, term applies only to taxID 35493, Streptophyta. not applicable to Basidiomycota Fungi, taxID 5204
     validations:
       required: false
   - type: textarea
