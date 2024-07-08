@@ -1,0 +1,101 @@
+name: Add term- Request a New ToS Ontology Term
+description: Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information.
+title: NTR [ ADD NAME HERE ]
+labels: [ new-term-request ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a new ontology term be added to TOSO. Thanks for taking the time to contribute. 
+  - type: checkboxes
+    id: category
+    attributes:
+      label: In which category is your new term request?
+      description: See all data change workflows by ToS Ontology Operations Team at (https://github.com/Tree-of-Sex/ToS-Ontology/wiki/Data-change-workflows).
+      options:
+        - label: new_definition
+        - label: existing_definition
+  - type: textarea
+    id: preferred
+    attributes:
+      label: Preferred term label
+      description: Preferred term label. Please add the label in lowercase, unless it is a proper name.
+      placeholder: e.g., chromosome
+    validations:
+      required: true
+  - type: input
+    id: synonyms
+    attributes:
+      label: Synonyms
+      description: Alternative term(s) or acroynymm for the preferred label. Separate by a comma.
+      placeholder:  e.g., nuclear chromosome
+    validations:
+      required: false
+  - type: dropdown
+    id: synonym_type
+    attributes:
+      label: Synonym type
+      description: Please indicate if the synonym is exact, broad, narrow or related. See [here for more explanation of synonym scope](https://github.com/Tree-of-Sex/ToS-Ontology/wiki).
+      options:
+        - exact
+        - broad
+        - narrow
+        - related
+    validations:
+      required: false
+  - type: textarea
+    id: definition
+    attributes:
+      label: Textual definition
+      description: Please provide a definition of the term and a reference, such as a DOI or PubMed ID, if applicable. The definition should be understandable even for non-specialists. 
+    validations:
+      required: true   
+  - type: input
+    id: IRI
+    attributes:
+      label: ID of term
+      description: Provide IRI or ID for the term if selected from an existing OBO ontology.
+      placeholder: e.g., GO_0005694, http://purl.obolibrary.org/obo/GO_0005694"
+  - type: input
+    id: parent
+    attributes:
+      label: Parent term
+      description: Provide a parent term or superclass. This is the class this new term should be classified under. Provide the ID and label.
+      placeholder: e.g., MONDO:0005212 rhabdomyosarcoma
+    validations:
+      required: false
+  - type: input
+    id: children
+    attributes:
+      label: Children term(s)
+      description: List any existing terms that should be classified underneath this new proposed term, if applicable. Provide the ID and label.
+      placeholder: ex. MONDO:0100067 childhood spindle cell rhabdomyosarcoma
+    validations:
+      required: false
+  - type: textarea
+    id: DOI
+    attributes:
+      label: Reference
+      description: Include the DOI / PubMed ID to refer to any relevant article that provides additional information about the suggested term and relationships.
+      placeholder: e.g., https://doi.org/10.1038/nrg2008
+    validations:
+      required: false
+  - type: input
+    id: attribution
+    attributes:
+      label: ORCID Identifier
+      description: If you would like a nanoattribution, please indicate your ORCID id. ORCID identifiers can be made at https://orcid.org.
+      placeholder: e.g. https://orcid.org/0000-0001-5208-3432
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow ToS and TOSO [Code of Conduct](https://github.com/Tree-of-Sex/toso/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
