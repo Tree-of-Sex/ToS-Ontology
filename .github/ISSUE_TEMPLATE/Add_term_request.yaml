@@ -1,5 +1,5 @@
-name: "Tree of Sex Ontology (TOSO) - term request" 
-description: 'Add new/existing terms to the Tree of Sex Ontology (TOSO).For new ontology term requests, please provide the following information:'
+name: "Tree of Sex Ontology - TOSO term request" 
+description: 'Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information:'
 title: NTR:[ADD NAME HERE]
 labels: [ new-term-request ]
 body:
@@ -55,16 +55,16 @@ body:
     id: IRI if existing
     attributes:
       label: ID of term
-      description: Provide label and ID for the term if selected from an existing OBO ontology 
-      placeholder: "GO_0005694"
+      description: Provide IRI or ID for the term if selected from an existing OBO ontology.
+      placeholder: e.g., GO_0005694, http://purl.obolibrary.org/obo/GO_0005694"
  - type: input
     id: parent
     attributes:
       label: Parent term
-      description: Provide a parent term or superclass (ie the class this new term should be classified under. Provide the ID and label.
-      placeholder: ex. MONDO:0005212 rhabdomyosarcoma
+      description: Provide a parent term or superclass. This is the class this new term should be classified under. Provide the ID and label.
+      placeholder: e.g., MONDO:0005212 rhabdomyosarcoma
     validations:
-      required: true
+      required: false
   - type: input
     id: children
     attributes:
@@ -73,25 +73,20 @@ body:
       placeholder: ex. MONDO:0100067 childhood spindle cell rhabdomyosarcoma
     validations:
       required: false
-  
   - type: textarea
     id: Reference DOI if existing
     attributes:
       label: Reference
-      description: Include the DOI / PubMed ID to refer to any relevant article that provides additional information about the suggested term.
+      description: Include the DOI / PubMed ID to refer to any relevant article that provides additional information about the suggested term and relationships.
       placeholder: e.g., https://doi.org/10.1038/nrg2008
     validations:
       required: false
-  - type: textarea
-    id: parent
-    attributes:
-      label: Suggested parent term
-      description: Please look in the hierarchy in a browser such as [OLS](http://www.ebi.ac.uk/ols/ontologies/toso)
-  - type: textarea
+  - type: input
     id: attribution
     attributes:
-      label: Attribution
-      description: If you would like a nanoattribution, please indicate your ORCID id
+      label: ORCID Identifier
+      description: If you would like a nanoattribution, please indicate your ORCID id. ORCID identifiers can be made at https://orcid.org.
+      placeholder: e.g. https://orcid.org/0000-0001-5208-3432
   - type: textarea
     id: context
     attributes:
