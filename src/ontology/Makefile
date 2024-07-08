@@ -9,6 +9,9 @@
 # ----------------------------------------
 # More information: https://github.com/INCATools/ontology-development-kit/
 
+# Fingerprint of the configuration file when this Makefile was last generated
+CONFIG_HASH=                c7b9b977471ce30270904d165e3fc8a139018ac27a021f89f04af9c402959f13
+
 
 # ----------------------------------------
 # Standard Constants
@@ -37,7 +40,7 @@ SCRIPTSDIR=                 ../scripts
 UPDATEREPODIR=              target
 SPARQLDIR =                 ../sparql
 COMPONENTSDIR =             components
-REPORT_FAIL_ON =            None
+REPORT_FAIL_ON =            ERROR
 REPORT_LABEL =              -l true
 REPORT_PROFILE_OPTS =       
 OBO_FORMAT_OPTIONS =        
@@ -73,7 +76,7 @@ endif
 all: all_odk
 
 .PHONY: all_odk
-all_odk: odkversion test custom_reports all_assets
+all_odk: odkversion config_check test custom_reports all_assets
 
 .PHONY: test
 test: odkversion reason_test sparql_test robot_reports $(REPORTDIR)/validate_profile_owl2dl_$(ONT).owl.txt
@@ -95,6 +98,12 @@ reason_test: $(EDIT_PREPROCESSED)
 odkversion:
 	@echo "ODK Makefile $(ODK_VERSION_MAKEFILE)"
 	@odk-info --tools
+.PHONY: config_check
+config_check:
+	@if [ "$$(sha256sum $(ONT)-odk.yaml | cut -c1-64)" = "$(CONFIG_HASH)" ]; then \
+		echo "Repository is up-to-date." ; else \
+		echo "Your ODK configuration has changed since this Makefile was generated. You may need to run 'make update_repo'." ; fi
+
 
 $(TMPDIR) $(REPORTDIR) $(MIRRORDIR) $(IMPORTDIR) $(COMPONENTSDIR) $(SUBSETDIR):
 	mkdir -p $@
@@ -355,6 +364,16 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: go
+
+$(IMPORTDIR)/go_import.owl: $(MIRRORDIR)/go.owl $(IMPORTDIR)/go_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query -i $< --update ../sparql/preprocess-module.ru \
+    extract -T $(IMPORTDIR)/go_terms_combined.txt --copy-ontology-annotations true --force true --method BOT \
+		remove --base-iri http://purl.obolibrary.org/obo/GO_ --axioms external --preserve-structure false --trim false \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/inject-synonymtype-declaration.ru \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) --term rdfs:label --term IAO:0000115  -T $(IMPORTDIR)/go_terms_combined.txt --select complement --select "classes individuals annotation-properties" \
+		$(ANNOTATE_CONVERT_FILE); fi
+
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -392,14 +411,14 @@ ifeq ($(strip $(MIR)),true)
 .PRECIOUS: $(MIRRORDIR)/po.owl
 mirror-po: | $(TMPDIR)
 	curl -L $(OBOBASE)/po.owl --create-dirs -o $(TMPDIR)/po-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/po-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/po-download.owl --base-iri $(OBOBASE)/PO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: ro
 .PHONY: mirror-ro
 .PRECIOUS: $(MIRRORDIR)/ro.owl
 mirror-ro: | $(TMPDIR)
-	curl -L $(OBOBASE)/ro.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
+	curl -L $(OBOBASE)/ro/ro-base.owl --create-dirs -o $(TMPDIR)/ro-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/ro-download.owl -o $(TMPDIR)/$@.owl
 
 
@@ -407,7 +426,7 @@ mirror-ro: | $(TMPDIR)
 .PHONY: mirror-pato
 .PRECIOUS: $(MIRRORDIR)/pato.owl
 mirror-pato: | $(TMPDIR)
-	curl -L $(OBOBASE)/pato.owl --create-dirs -o $(TMPDIR)/pato-download.owl --retry 4 --max-time 200 && \
+	curl -L $(OBOBASE)/pato/pato-base.owl --create-dirs -o $(TMPDIR)/pato-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/pato-download.owl -o $(TMPDIR)/$@.owl
 
 
@@ -416,14 +435,14 @@ mirror-pato: | $(TMPDIR)
 .PRECIOUS: $(MIRRORDIR)/bfo.owl
 mirror-bfo: | $(TMPDIR)
 	curl -L $(OBOBASE)/bfo.owl --create-dirs -o $(TMPDIR)/bfo-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/bfo-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -i $(TMPDIR)/bfo-download.owl --base-iri $(OBOBASE)/BFO --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: oba
 .PHONY: mirror-oba
 .PRECIOUS: $(MIRRORDIR)/oba.owl
 mirror-oba: | $(TMPDIR)
-	curl -L $(OBOBASE)/oba.owl --create-dirs -o $(TMPDIR)/oba-download.owl --retry 4 --max-time 200 && \
+	curl -L $(OBOBASE)/oba/oba-base.owl --create-dirs -o $(TMPDIR)/oba-download.owl --retry 4 --max-time 200 && \
 	$(ROBOT) convert -i $(TMPDIR)/oba-download.owl -o $(TMPDIR)/$@.owl
 
 
@@ -431,8 +450,7 @@ mirror-oba: | $(TMPDIR)
 .PHONY: mirror-go
 .PRECIOUS: $(MIRRORDIR)/go.owl
 mirror-go: | $(TMPDIR)
-	curl -L $(OBOBASE)/go.owl --create-dirs -o $(TMPDIR)/go-download.owl --retry 4 --max-time 200 && \
-	$(ROBOT) convert -i $(TMPDIR)/go-download.owl -o $(TMPDIR)/$@.owl
+	$(ROBOT) remove -I http://purl.obolibrary.org/obo/go/go-base.owl --base-iri http://purl.obolibrary.org/obo/GO_  --axioms external --preserve-structure false --trim false -o $(TMPDIR)/$@.owl
 
 
 $(MIRRORDIR)/%.owl: mirror-% | $(MIRRORDIR)
