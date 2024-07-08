@@ -42,6 +42,6 @@ body:
     attributes:
       label: Additional comments
       description: |
-        Please provide any additional comments here. If you requested multiples synonyms that are not all the same scope (eg they are not all exact synonyms, please indicate that in the comments). 
+        Please provide any additional comments here. Specify on the comments each synonym type if you requested multiples synonyms that are not all the same scope. 
     validations:
       required: false
