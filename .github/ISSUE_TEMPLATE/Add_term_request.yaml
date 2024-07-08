@@ -1,4 +1,5 @@
 name: Add term- Request a New Ontology Term
+about: Main form to request terms
 description: Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information.
 title: NTR [ ADD NAME HERE ]
 labels: [ new-term-request ]
