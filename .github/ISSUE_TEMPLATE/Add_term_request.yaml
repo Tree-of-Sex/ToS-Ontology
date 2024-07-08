@@ -1,4 +1,4 @@
-name: Add term- Request a New Ontology Term
+name: Add term- Request a New ToS Ontology Term
 description: Add new/existing terms to the Tree of Sex Ontology.For new ontology term requests, please provide the following information.
 title: NTR [ ADD NAME HERE ]
 labels: [ new-term-request ]
@@ -15,13 +15,12 @@ body:
       options:
         - label: new_definition
         - label: existing_definition
-        - required: true
   - type: textarea
     id: preferred
     attributes:
       label: Preferred term label
       description: Preferred term label. Please add the label in lowercase, unless it is a proper name.
-      placegolder: e.g., chromosome
+      placeholder: e.g., chromosome
     validations:
       required: true
   - type: input
@@ -52,12 +51,12 @@ body:
     validations:
       required: true   
   - type: input
-    id: IRI if existing
+    id: IRI
     attributes:
       label: ID of term
       description: Provide IRI or ID for the term if selected from an existing OBO ontology.
       placeholder: e.g., GO_0005694, http://purl.obolibrary.org/obo/GO_0005694"
- - type: input
+  - type: input
     id: parent
     attributes:
       label: Parent term
@@ -74,7 +73,7 @@ body:
     validations:
       required: false
   - type: textarea
-    id: Reference DOI if existing
+    id: DOI
     attributes:
       label: Reference
       description: Include the DOI / PubMed ID to refer to any relevant article that provides additional information about the suggested term and relationships.
