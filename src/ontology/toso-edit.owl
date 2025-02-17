@@ -21,7 +21,68 @@ Annotation(dcterms:title "Tree of Sex ontology")
 
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000001>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000003>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000004>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000005>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000006>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000007>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000008>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000009>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000010>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000011>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000012>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000017>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000018>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000019>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000020>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000021>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000022>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000023>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000024>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000025>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000026>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000027>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000028>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000029>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000030>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000031>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000032>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000033>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000034>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000035>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000036>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000037>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000038>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000039>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000040>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000041>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000042>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000043>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000044>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000045>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000046>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000047>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000048>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000049>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000050>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000051>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000052>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000053>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000054>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000055>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000056>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000057>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000058>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000059>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000060>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000061>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000062>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000063>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000064>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000065>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000066>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000067>))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -64,6 +125,13 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000001> "
 AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/TOSO_0000001> "is description a definition?"@en)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000001> "Example of a class"@en)
 
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000002> (apomixis)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000002> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000002> "2024-11-08T14:04:57Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000002> "apomixis"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000002> <http://purl.obolibrary.org/obo/GO_0019954>)
+
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000003> (New Term)
 
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "2. Add Definition References
@@ -74,6 +142,427 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000003> "2024-06-27T00:15:02Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000003> "New Term"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000003> <http://purl.obolibrary.org/obo/TOSO_0000001>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000004> (sex-chromosome karyotype formula)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000004> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000004> "2025-02-17T10:51:55Z"^^xsd:dateTime)
+AnnotationAssertion(dcterms:title <http://purl.obolibrary.org/obo/TOSO_0000004> "sex-chromosome karyotype"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000004> "sex-chromosome karyotype formula")
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000004> <http://purl.obolibrary.org/obo/TOSO_0000035>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000005> (autosome)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000005> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000005> "2025-02-17T10:53:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000005> "autosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000005> <http://purl.obolibrary.org/obo/GO_0000228>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000006> (chromosome number)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000006> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000006> "2025-02-17T10:58:15Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000006> "chromosome number"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000006> <http://purl.obolibrary.org/obo/TOSO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000007> (chromosome number of male)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000007> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000007> "2025-02-17T10:59:10Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000007> "chromosome number of male"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000007> <http://purl.obolibrary.org/obo/TOSO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000008> (chromosome number female)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000008> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000008> "2025-02-17T10:59:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000008> "chromosome number female"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000008> <http://purl.obolibrary.org/obo/TOSO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000009> (germline chromosome number (1n))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000009> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000009> "2025-02-17T10:59:58Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000009> "germline chromosome number (1n)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000009> <http://purl.obolibrary.org/obo/TOSO_0000006>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000010> (karyotype)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000010> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000010> "2025-02-17T11:01:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000010> "karyotype"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000010> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000011> (female germline chromosome number)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000011> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000011> "2025-02-17T11:02:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000011> "female germline chromosome number"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000011> <http://purl.obolibrary.org/obo/TOSO_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000012> (male germline chromosome number)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000012> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000012> "2025-02-17T11:03:01Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000012> "male germline chromosome number"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000012> <http://purl.obolibrary.org/obo/TOSO_0000009>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000017> (karyotype phenotype)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000017> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000017> "2025-02-17T11:10:31Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000017> "karyotype phenotype"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000017> <http://purl.obolibrary.org/obo/TOSO_0000010>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000018> (accessory chromosome)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000018> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000018> "2025-02-17T11:11:55Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000018> "accessory chromosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000018> <http://purl.obolibrary.org/obo/GO_0000228>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000019> (programmed genome elimination)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000019> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000019> "2025-02-17T11:12:12Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000019> "programmed genome elimination"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000019> <http://purl.obolibrary.org/obo/GO_0008150>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000020> (ploidy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000020> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000020> "2025-02-17T11:13:22Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000020> "ploidy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000020> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000021> (sexual system (process))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000021> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000021> "2025-02-17T11:13:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000021> "sexual system (process)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000021> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000022> (hermaphroditism (hermaphrodite phenotype))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000022> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000022> "2025-02-17T11:14:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000022> "hermaphroditism (hermaphrodite phenotype)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000022> <http://purl.obolibrary.org/obo/TOSO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000023> (monoecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000023> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000023> "2025-02-17T11:14:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000023> "monoecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000023> <http://purl.obolibrary.org/obo/TOSO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000024> (dioecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000024> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000024> "2025-02-17T11:14:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000024> "dioecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000024> <http://purl.obolibrary.org/obo/TOSO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000025> (gynodioecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000025> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000025> "2025-02-17T11:14:40Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000025> "gynodioecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000025> <http://purl.obolibrary.org/obo/TOSO_0000024>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000026> (androdioecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000026> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000026> "2025-02-17T11:14:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000026> "androdioecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000026> <http://purl.obolibrary.org/obo/TOSO_0000024>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000027> (andromonoecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000027> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000027> "2025-02-17T11:15:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000027> "andromonoecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000027> <http://purl.obolibrary.org/obo/TOSO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000028> (gynomonoecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000028> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000028> "2025-02-17T11:29:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000028> "gynomonoecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000028> <http://purl.obolibrary.org/obo/TOSO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000029> (polygamomonoecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000029> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000029> "2025-02-17T11:29:34Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000029> "polygamomonoecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000029> <http://purl.obolibrary.org/obo/TOSO_0000023>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000030> (polygamodioecy)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000030> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000030> "2025-02-17T11:29:47Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000030> "polygamodioecy"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000030> <http://purl.obolibrary.org/obo/TOSO_0000024>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000031> (apomixis (apomictic))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000031> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000031> "2025-02-17T11:30:20Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000031> "apomixis (apomictic)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000031> <http://purl.obolibrary.org/obo/TOSO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000032> (mating system)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000032> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000032> "2025-02-17T11:31:33Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000032> "mating system"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000032> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000033> (gonochorism (gonochorous phenotype))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000033> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000033> "2025-02-17T11:34:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000033> "gonochorism (gonochorous phenotype)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000033> <http://purl.obolibrary.org/obo/TOSO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000034> (parthenogenesis (parthenogenetic phenotype))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000034> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000034> "2025-02-17T11:35:03Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000034> "parthenogenesis (parthenogenetic phenotype)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000034> <http://purl.obolibrary.org/obo/TOSO_0000021>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000035> (karyotype formula)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000035> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000035> "2025-02-17T11:36:08Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000035> "karyotype formula"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000035> <http://purl.obolibrary.org/obo/TOSO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000036> (Z0)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000036> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000036> "2025-02-17T11:39:36Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000036> "Z0"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000036> <http://purl.obolibrary.org/obo/TOSO_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000037> (ZW)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000037> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000037> "2025-02-17T11:39:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000037> "ZW"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000037> <http://purl.obolibrary.org/obo/TOSO_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000038> (Y chromosome)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000038> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000038> "2025-02-17T11:41:28Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000038> "Y chromosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000038> <http://purl.obolibrary.org/obo/GO_0000803>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000039> (W chromosome)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000039> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000039> "2025-02-17T11:45:07Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000039> "W chromosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000039> <http://purl.obolibrary.org/obo/GO_0000803>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000040> (Z chromosome)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000040> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000040> "2025-02-17T11:45:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000040> "Z chromosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000040> <http://purl.obolibrary.org/obo/GO_0000803>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000041> (ZZ)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000041> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000041> "2025-02-17T11:47:09Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000041> "ZZ"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000041> <http://purl.obolibrary.org/obo/TOSO_0000046>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000042> (XX)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000042> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000042> "2025-02-17T11:47:25Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000042> "XX"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000042> <http://purl.obolibrary.org/obo/TOSO_0000046>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000043> (XY)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000043> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000043> "2025-02-17T11:47:35Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000043> "XY"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000043> <http://purl.obolibrary.org/obo/TOSO_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000044> (X0)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000044> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000044> "2025-02-17T11:47:46Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000044> "X0"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000044> <http://purl.obolibrary.org/obo/TOSO_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000045> (sex-chromosome formula of heterogametic sex)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000045> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000045> "2025-02-17T11:49:17Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000045> "sex-chromosome formula of heterogametic sex"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000045> <http://purl.obolibrary.org/obo/TOSO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000046> (sex-chromosome formula of homogametic sex)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000046> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000046> "2025-02-17T11:49:32Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000046> "sex-chromosome formula of homogametic sex"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000046> <http://purl.obolibrary.org/obo/TOSO_0000004>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000047> (complex XY)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000047> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000047> "2025-02-17T11:50:39Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000047> "complex XY"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000047> <http://purl.obolibrary.org/obo/TOSO_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000048> (complex ZW)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000048> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000048> "2025-02-17T11:50:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000048> "complex ZW"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000048> <http://purl.obolibrary.org/obo/TOSO_0000045>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000049> (B chromosome)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000049> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000049> "2025-02-17T11:52:15Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000049> "B chromosome"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000049> <http://purl.obolibrary.org/obo/TOSO_0000018>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000050> (germline restricted chromosome (GRC))
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000050> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000050> "2025-02-17T11:52:52Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000050> "germline restricted chromosome (GRC)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000050> <http://purl.obolibrary.org/obo/TOSO_0000018>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000051> (genome size)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000051> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000051> "2025-02-17T11:56:27Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000051> "genome size"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000051> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000052> (chromosome morphology)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000052> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000052> "2025-02-17T12:21:30Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000052> "chromosome morphology"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000052> <http://purl.obolibrary.org/obo/GO_0000228>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000053> (metacentric)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000053> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000053> "2025-02-17T12:21:53Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000053> "metacentric"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000053> <http://purl.obolibrary.org/obo/TOSO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000054> (homolog chromosomes relative morphology)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000054> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000054> "2025-02-17T12:22:29Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000054> "homolog chromosomes relative morphology"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000054> <http://purl.obolibrary.org/obo/TOSO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000055> (homomorphic)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000055> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000055> "2025-02-17T12:22:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000055> "homomorphic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000055> <http://purl.obolibrary.org/obo/TOSO_0000054>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000056> (heteromorphic)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000056> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000056> "2025-02-17T12:23:06Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000056> "heteromorphic"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000056> <http://purl.obolibrary.org/obo/TOSO_0000054>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000057> (submetacentric)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000057> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000057> "2025-02-17T12:24:45Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000057> "submetacentric"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000057> <http://purl.obolibrary.org/obo/TOSO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000058> (subtelocentric)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000058> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000058> "2025-02-17T12:25:44Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000058> "subtelocentric"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000058> <http://purl.obolibrary.org/obo/TOSO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000059> (subacrocentric)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000059> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000059> "2025-02-17T12:25:57Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000059> "subacrocentric"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000059> <http://purl.obolibrary.org/obo/TOSO_0000058>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000060> (acrocentric)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000060> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000060> "2025-02-17T12:26:11Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000060> "acrocentric"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000060> <http://purl.obolibrary.org/obo/TOSO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000061> (telocentric)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000061> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000061> "2025-02-17T12:26:24Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000061> "telocentric"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000061> <http://purl.obolibrary.org/obo/TOSO_0000052>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000062> (fundamental number)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000062> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000062> "2025-02-17T12:28:57Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000062> "fundamental number"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000062> <http://purl.obolibrary.org/obo/TOSO_0000017>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000063> (fundamental number female)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000063> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000063> "2025-02-17T12:29:54Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000063> "fundamental number female"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000063> <http://purl.obolibrary.org/obo/TOSO_0000062>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000064> (fundamental number male)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000064> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000064> "2025-02-17T12:30:04Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000064> "fundamental number male"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000064> <http://purl.obolibrary.org/obo/TOSO_0000062>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000065> (selfing)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000065> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000065> "2025-02-17T12:31:19Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000065> "selfing"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000065> <http://purl.obolibrary.org/obo/GO_0022414>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000066> (self incompatible)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000066> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000066> "2025-02-17T12:31:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000066> "self incompatible"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000066> <http://purl.obolibrary.org/obo/TOSO_0000065>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000067> (self compatible)
+
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000067> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000067> "2025-02-17T12:31:59Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000067> "self compatible"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000067> <http://purl.obolibrary.org/obo/TOSO_0000065>)
 
 
 )
