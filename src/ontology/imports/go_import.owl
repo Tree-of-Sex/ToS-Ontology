@@ -270,7 +270,7 @@ AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <htt
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0005622> <http://purl.obolibrary.org/obo/go#goslim_metagenomics>)
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#inSubset> <http://purl.obolibrary.org/obo/GO_0005622> <http://purl.obolibrary.org/obo/go#goslim_plant>)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0005622> "intracellular anatomical structure")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0005622> <http://purl.obolibrary.org/obo/GO_0110165>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0005622> <http://purl.obolibrary.org/obo/GO_0016020>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0005634> (nucleus)
 
