@@ -25,6 +25,8 @@ import_group:
       make_base: true
     - id: oba
       use_base: true
+    - id: omo
+      use_base: true
     - id: go
       mirror_from: http://purl.obolibrary.org/obo/go/go-base.owl
       make_base: true

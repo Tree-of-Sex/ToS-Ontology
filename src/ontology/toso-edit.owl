@@ -83,6 +83,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000064>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000065>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000066>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000067>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb>))
 Declaration(AnnotationProperty(dcterms:date))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
@@ -261,6 +262,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000023> <http://purl.obolibrary
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000024> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000024> "2025-02-17T11:14:24Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000024> "dioecy"@en)
+EquivalentClasses(<http://purl.obolibrary.org/obo/TOSO_0000024> <http://purl.obolibrary.org/obo/TOSO_0000033>)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000024> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000025> (gynodioecy)
@@ -268,42 +270,43 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000024> <http://purl.obolibrary
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000025> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000025> "2025-02-17T11:14:40Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000025> "gynodioecy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000025> <http://purl.obolibrary.org/obo/TOSO_0000024>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000025> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000026> (androdioecy)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TOSO_0000026> "A sexual system in which males and hermaphrodites coexist in a population")
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000026> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000026> "2025-02-17T11:14:50Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000026> "androdioecy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000026> <http://purl.obolibrary.org/obo/TOSO_0000024>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000026> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000027> (andromonoecy)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000027> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000027> "2025-02-17T11:15:08Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000027> "andromonoecy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000027> <http://purl.obolibrary.org/obo/TOSO_0000023>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000027> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000028> (gynomonoecy)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000028> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000028> "2025-02-17T11:29:04Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000028> "gynomonoecy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000028> <http://purl.obolibrary.org/obo/TOSO_0000023>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000028> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000029> (polygamomonoecy)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000029> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000029> "2025-02-17T11:29:34Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000029> "polygamomonoecy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000029> <http://purl.obolibrary.org/obo/TOSO_0000023>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000029> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000030> (polygamodioecy)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000030> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000030> "2025-02-17T11:29:47Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000030> "polygamodioecy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000030> <http://purl.obolibrary.org/obo/TOSO_0000024>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000030> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000031> (apomixis (apomictic))
 
@@ -563,6 +566,34 @@ AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_000
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000067> "2025-02-17T12:31:59Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000067> "self compatible"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000067> <http://purl.obolibrary.org/obo/TOSO_0000065>)
+
+# Class: <http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> (Sex)
+
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> "Depending on context sex can have distinct definitions 
+
+Different terms that could describe or have been used to describe what sex represents (Autho: Caitlin McDonough-Goldstein).
+
+Should the ToS Ontology start describing individuals with a preferred term different thanjust \"sex\"?
+
+
+Reproductive category
+Sex category
+Reproductive expression
+Sex expression
+Reproductive phenotype
+Sexual phenotype
+Reproductive modality
+Sexual modality
+Reproductive morph
+Sexual morph
+Reproductive role
+Sexual role
+Reproductive allocation strategy
+Sex allocation strategy
+Reproductive type
+Sexual type")
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> "Sex"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> <http://purl.obolibrary.org/obo/TOSO_0000000>)
 
 
 )
