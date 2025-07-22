@@ -13,7 +13,9 @@
   <uri name="http://purl.obolibrary.org/obo/toso/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
   
   <uri name="http://purl.obolibrary.org/obo/toso/imports/oba_import.owl" uri="imports/oba_import.owl"/>
-  
+
+  <uri name="http://purl.obolibrary.org/obo/toso/imports/omo_import.owl" uri="imports/omo_import.owl"/>
+
   <uri name="http://purl.obolibrary.org/obo/toso/imports/go_import.owl" uri="imports/go_import.owl"/>
   
   
