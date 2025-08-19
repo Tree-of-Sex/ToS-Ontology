@@ -32,6 +32,10 @@ import_group:
       base_iris:
         - http://purl.obolibrary.org/obo/GO_
       module_type: minimal
+sssom_mappingset_group:
+  products:
+    - id: GSSO
+      maintenance: manual
 robot_report:
   custom_profile: false
   custom_sparql_checks:

@@ -12,15 +12,14 @@ Ontology(<http://purl.obolibrary.org/obo/toso.owl>
 Import(<http://purl.obolibrary.org/obo/toso/imports/bfo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/toso/imports/go_import.owl>)
 Import(<http://purl.obolibrary.org/obo/toso/imports/oba_import.owl>)
+Import(<http://purl.obolibrary.org/obo/toso/imports/omo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/toso/imports/pato_import.owl>)
 Import(<http://purl.obolibrary.org/obo/toso/imports/po_import.owl>)
 Import(<http://purl.obolibrary.org/obo/toso/imports/ro_import.owl>)
-Import(<http://purl.obolibrary.org/obo/toso/imports/omo_import.owl>)
 Annotation(dcterms:description "The Tree of Sex ontology covers any trait related to reproduction included in the Tree of Sex database"@en)
 Annotation(dcterms:license <https://creativecommons.org/licenses/by/4.0/>)
 Annotation(dcterms:title "Tree of Sex ontology")
 
-Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000000>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000001>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000002>))
 Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_0000003>))
@@ -111,21 +110,21 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 #   Classes
 ############################
 
+# Class: <http://purl.obolibrary.org/obo/GO_0000803> (sex chromosome)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasExactSynonym> <http://purl.obolibrary.org/obo/GO_0000803> "allosome")
+
 # Class: <http://purl.obolibrary.org/obo/GO_0005575> (cellular_component)
 
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0005575> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0005575> <http://purl.obolibrary.org/obo/BFO_0000040>)
 
-# Class: <http://purl.obolibrary.org/obo/TOSO_0000000> (ToS1)
-
-AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/TOSO_0000000> "All original terms used by the first instance of the Tree of Sex database"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000000> "ToS1"@en)
-
-# Class: <http://purl.obolibrary.org/obo/TOSO_0000001> (Example of a class)
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000001> (1-Example of a class)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000001> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000001> "2024-06-27T00:01:29Z"^^xsd:dateTime)
 AnnotationAssertion(dcterms:description <http://purl.obolibrary.org/obo/TOSO_0000001> "is description a definition?"@en)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000001> "Example of a class"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000001> "1-Example of a class"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000001> owl:Nothing)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000002> (apomixis)
 
@@ -193,7 +192,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000009> <http://purl.obolibrary
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000010> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000010> "2025-02-17T11:01:18Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000010> "karyotype"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000010> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000010> <http://purl.obolibrary.org/obo/OBA_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000011> (female germline chromosome number)
 
@@ -209,11 +208,11 @@ AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000012> "
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000012> "male germline chromosome number"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000012> <http://purl.obolibrary.org/obo/TOSO_0000009>)
 
-# Class: <http://purl.obolibrary.org/obo/TOSO_0000017> (karyotype phenotype)
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000017> (karyotype descriptor)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000017> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000017> "2025-02-17T11:10:31Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000017> "karyotype phenotype"@en)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000017> "karyotype descriptor"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000017> <http://purl.obolibrary.org/obo/TOSO_0000010>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000018> (accessory chromosome)
@@ -235,26 +234,30 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000019> <http://purl.obolibrary
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000020> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000020> "2025-02-17T11:13:22Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000020> "ploidy"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000020> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000020> <http://purl.obolibrary.org/obo/PATO_0001374>)
 
-# Class: <http://purl.obolibrary.org/obo/TOSO_0000021> (sexual system (process))
+# Class: <http://purl.obolibrary.org/obo/TOSO_0000021> (sexual system (quality > phenotype descriptor))
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000021> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000021> "2025-02-17T11:13:50Z"^^xsd:dateTime)
-AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000021> "sexual system (process)"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000021> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000021> "sexual system (quality > phenotype descriptor)"@en)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000021> <http://purl.obolibrary.org/obo/OBA_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000022> (hermaphroditism (hermaphrodite phenotype))
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TOSO_0000022> "Containing both male and female sex organs")
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000022> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000022> "0000-0003-1148-631X")
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000022> "2025-02-17T11:14:03Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000022> "hermaphroditism (hermaphrodite phenotype)"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000022> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000023> (monoecy)
 
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TOSO_0000023> "A sexual system in which male and female flowers are present on the same plant.")
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000023> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000023> "2025-02-17T11:14:18Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/TOSO_0000023> "It is common in angiosperms, and occurs in 10% of all plant species. GSSO:011868")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000023> "monoecy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000023> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
@@ -277,7 +280,9 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000025> <http://purl.obolibrary
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/TOSO_0000026> "A sexual system in which males and hermaphrodites coexist in a population")
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000026> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000026> "https://orcid.org/0000-0003-1148-631X")
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000026> "2025-02-17T11:14:50Z"^^xsd:dateTime)
+AnnotationAssertion(rdfs:comment <http://purl.obolibrary.org/obo/TOSO_0000026> "Hermaphrodites here refer to individuals, and that includes either individual hermaphroditic plants with separate male and female flowers as well as individual hermaphroditic plants with hermaphroditic (bisexual) flowers")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000026> "androdioecy"@en)
 SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000026> <http://purl.obolibrary.org/obo/TOSO_0000021>)
 
@@ -321,7 +326,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000031> <http://purl.obolibrary
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000032> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000032> "2025-02-17T11:31:33Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000032> "mating system"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000032> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000032> <http://purl.obolibrary.org/obo/OBA_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000033> (gonochorism (gonochorous phenotype))
 
@@ -454,14 +459,14 @@ SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000050> <http://purl.obolibrary
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000051> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000051> "2025-02-17T11:56:27Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000051> "genome size"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000051> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000051> <http://purl.obolibrary.org/obo/OBA_0000001>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000052> (chromosome morphology)
 
 AnnotationAssertion(dcterms:contributor <http://purl.obolibrary.org/obo/TOSO_0000052> <https://orcid.org/0000-0002-3112-0000>)
 AnnotationAssertion(dcterms:date <http://purl.obolibrary.org/obo/TOSO_0000052> "2025-02-17T12:21:30Z"^^xsd:dateTime)
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_0000052> "chromosome morphology"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000052> <http://purl.obolibrary.org/obo/GO_0000228>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_0000052> <http://purl.obolibrary.org/obo/TOSO_0000017>)
 
 # Class: <http://purl.obolibrary.org/obo/TOSO_0000053> (metacentric)
 
@@ -594,7 +599,8 @@ Sex allocation strategy
 Reproductive type
 Sexual type")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> "Sex"@en)
-SubClassOf(<http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> <http://purl.obolibrary.org/obo/TOSO_0000000>)
+SubClassOf(<http://purl.obolibrary.org/obo/TOSO_c6ad489d_cdcc_4a0e_b1c6_6ea89ffebefb> <http://purl.obolibrary.org/obo/GO_0008150>)
 
 
+AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/RO_0001900> "temporal interpretation")
 )

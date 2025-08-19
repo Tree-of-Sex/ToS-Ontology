@@ -38,6 +38,7 @@ Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002297>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0012008>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
 Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000700>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/description>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/source>))
 Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/title>))
@@ -60,7 +61,12 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0000228> <http://purl.obolibrary.o
 
 # Class: <http://purl.obolibrary.org/obo/GO_0000803> (sex chromosome)
 
-AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "GOC:elh") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0000803> "A chromosome involved in sex determination.")
+AnnotationAssertion(Annotation(<http://purl.org/dc/elements/1.1/contributor> "0000-0003-4441-9615 - Alexandr Sember
+
+0000-0003-1470-5450 - Kamil Jaron
+
+0000-0003-1148-631X - 
+Nicole Valenzuela") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0000803> "A chromosome (linkage group) whose inheritance is associated with sex and the initiation of sexual development")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0000803> "sex chromosome")
 SubClassOf(<http://purl.obolibrary.org/obo/GO_0000803> <http://purl.obolibrary.org/obo/GO_0005694>)
 

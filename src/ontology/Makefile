@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                0aadd579d61aa154ae6ad8ed6ee963a8f5638225fbe3048c14698072e713024e
+CONFIG_HASH=                4231a535ed27f61337b16a356354a50e4c92e11a77f5e223f8232b20bc91feaa
 
 
 # ----------------------------------------
@@ -187,7 +187,7 @@ all_subsets: $(SUBSET_FILES)
 # ----------------------------------------
 
 
-MAPPINGS = 
+MAPPINGS =  GSSO
 
 MAPPING_FILES = $(patsubst %, $(MAPPINGDIR)/%.sssom.tsv, $(MAPPINGS))
 
