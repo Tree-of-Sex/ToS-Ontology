@@ -15,22 +15,28 @@ release_artefacts:
 edit_format: owl
 import_group:
   products:
-    - id: po
-      make_base: true
+    #- id: po
+    #  make_base: true
     - id: ro
       use_base: true
     - id: pato
       use_base: true
-    - id: bfo
-      make_base: true
-    - id: oba
-      use_base: true
-    - id: go
-      mirror_from: http://purl.obolibrary.org/obo/go/go-base.owl
-      make_base: true
-      base_iris:
-        - http://purl.obolibrary.org/obo/GO_
-      module_type: minimal
+    #- id: bfo
+    #  make_base: true
+    #- id: oba
+    #  use_base: true
+    #- id: go
+    #  mirror_from: http://purl.obolibrary.org/obo/go/go-base.owl
+    #  make_base: true
+    #  base_iris:
+    #    - http://purl.obolibrary.org/obo/GO_
+    #  module_type: minimal
+components:
+  products:
+    - filename: core.owl
+      use_template: true
+      templates:
+        - toso-core.tsv
 robot_report:
   custom_profile: false
   custom_sparql_checks:
