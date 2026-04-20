@@ -30,6 +30,7 @@ Declaration(Class(<http://purl.obolibrary.org/obo/GO_0009566>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0019954>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0022414>))
 Declaration(Class(<http://purl.obolibrary.org/obo/GO_0075325>))
+Declaration(Class(<http://purl.obolibrary.org/obo/TOSO_80229d74_f397_4f1e_98a0_9fd3d9addca7>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000050>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/BFO_0000051>))
 Declaration(ObjectProperty(<http://purl.obolibrary.org/obo/RO_0002162>))
@@ -109,7 +110,7 @@ SubClassOf(<http://purl.obolibrary.org/obo/GO_0009566> <http://purl.obolibrary.o
 AnnotationAssertion(Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "ISBN:0387520546") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:22977071") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:28779329") Annotation(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> "PMID:29559496") <http://purl.obolibrary.org/obo/IAO_0000115> <http://purl.obolibrary.org/obo/GO_0019954> "A type of reproduction in which new individuals are produced from a single organism, either from an unfertilized egg or from a single cell or group of cells.")
 AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://purl.obolibrary.org/obo/GO_0019954> "Wikipedia:Asexual_reproduction")
 AnnotationAssertion(rdfs:label <http://purl.obolibrary.org/obo/GO_0019954> "asexual reproduction")
-SubClassOf(<http://purl.obolibrary.org/obo/GO_0019954> <http://purl.obolibrary.org/obo/GO_0022414>)
+SubClassOf(<http://purl.obolibrary.org/obo/GO_0019954> <http://purl.obolibrary.org/obo/TOSO_80229d74_f397_4f1e_98a0_9fd3d9addca7>)
 
 # Class: <http://purl.obolibrary.org/obo/GO_0022414> (reproductive process)
 
