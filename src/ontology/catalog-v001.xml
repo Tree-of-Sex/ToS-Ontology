@@ -1,25 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-<group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public" xml:base="">
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <group id="odk-managed-catalog" prefer="public">
+    <uri name="http://purl.obolibrary.org/obo/toso/imports/ro_import.owl" uri="imports/ro_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/toso/imports/pato_import.owl" uri="imports/pato_import.owl" />
+    <uri name="http://purl.obolibrary.org/obo/toso/components/core.owl" uri="components/core.owl" />
+  </group>
+  <group id="Folder Repository, directory=, recursive=false, Auto-Update=false, version=2" prefer="public">
 
   
   
-  <uri name="http://purl.obolibrary.org/obo/toso/imports/po_import.owl" uri="imports/po_import.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/toso/imports/ro_import.owl" uri="imports/ro_import.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/toso/imports/pato_import.owl" uri="imports/pato_import.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/toso/imports/bfo_import.owl" uri="imports/bfo_import.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/toso/imports/oba_import.owl" uri="imports/oba_import.owl"/>
-  
-  <uri name="http://purl.obolibrary.org/obo/toso/imports/go_import.owl" uri="imports/go_import.owl"/>
-  
-  
-
-
-  
-
-</group>
+  </group>
 </catalog>

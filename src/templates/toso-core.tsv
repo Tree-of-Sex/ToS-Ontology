@@ -1,0 +1,99 @@
+ID	LABEL	OLD_VALUES	OLD_FIELDS	Parents	subset	xref	nico_comment	ToS1_Ontology_remarks	Ontology_person	Decision_OT_Team	New_definition_file_link	editor_comment
+ID	LABEL			SC %		A oboInOwl:hasDbXref						
+TOSO:0000001	Order		Order		taxonomy				n/a	wont_use		
+TOSO:0000002	Family		Family		taxonomy				n/a	wont_use		
+TOSO:0000003	Genus		Genus		taxonomy				n/a	wont_use		
+TOSO:0000004	species		species		taxonomy				n/a	wont_use		
+TOSO:0000005	Karyotype feature				property?							
+TOSO:0000006	Chromosome number		Chromosome number	Karyotype feature			You had a lot of whitespace around some of your labels. Be careful this is never the case!	included by CSC here; bizzarly I can't find  a term for this	Kamil Jaron			
+TOSO:0000007	Female chromosome number		Chromosome number (female)	Chromosome number					Kamil Jaron	create_ToS_definition		
+TOSO:0000008	Male chromosome number		Chromosome number (male)	Chromosome number					Kamil Jaron			
+TOSO:0000009	Ploidy		ploidy	Karyotype feature		PATO:0001374		included by CSC here	Kamil Jaron	use-main_term		
+TOSO:0000010	Predicted ploidy	(1,2,3,4)	Predicted ploidy	Karyotype feature				included by CSC here	Cibele Sotero Caio	create_ToS_definition	_new_term_template_OOT	
+TOSO:0000011	Chromosome		Chromosome			PLANA:0002021	This is Planarian specific	included by CSC here	Kamil Jaron	use-synonym		
+TOSO:0000012	Nuclear chromosome		Nuclear chromosome	Chromosome		GO:0000228		All mentions of chromosomes on ToS 1 refer to nuclear DNA. Should we use this as a synonym for what we call chromosome?	Cibele Sotero Caio	use-synonym		
+TOSO:0000013	Sex chromosome		Nuclear chromosome	Nuclear chromosome								
+TOSO:0000014	X chromosome		Sex chromosome	Sex chromosome								
+TOSO:0000015	Y chromosome		Sex chromosome	Sex chromosome								
+TOSO:0000016	Z chromosome		Sex chromosome	Sex chromosome								
+TOSO:0000017	W chromosome		Sex chromosome	Sex chromosome								
+TOSO:0000018	U chromosome			Sex chromosome								
+TOSO:0000019	V chromosome			Sex chromosome								
+TOSO:0000020	Karyotype		Karyotype			GENO:0000644			Sònia Garcia	use-main_term		
+TOSO:0000021	Sex chromosome karyotype											
+TOSO:0000022	ZO	ZO	Karyotype_value	Sex chromosome karyotype					Sònia Garcia	create_ToS_definition		
+TOSO:0000023	ZW	ZW	Karyotype_value	Sex chromosome karyotype					Lukáš Kratochvíl	create_ToS_definition		
+TOSO:0000024	XY	XY	Karyotype_value	Sex chromosome karyotype				Kamil: I bumped into GO:0000806 when I researched male/female chromosome counts; Perhpas that could be the way to define the sex chromosome systems "does it have Y?". (maybe irrelevant, just a thought to share, feel free to ignore it)	Lukáš Kratochvíl			
+TOSO:0000025	XO	XO	Karyotype_value	Sex chromosome karyotype					Lukáš Kratochvíl			
+TOSO:0000026	WO	WO	Karyotype_value	Sex chromosome karyotype					Lukáš Kratochvíl			
+TOSO:0000027	Complex sex chromosome karyotype			Sex chromosome karyotype								
+TOSO:0000028	Complex XY	complex XY	Karyotype_value	Complex sex chromosome karyotype					Nicole Valenzuela			
+TOSO:0000029	Complex ZW	complex ZW	Karyotype_value	Complex sex chromosome karyotype					Nicole Valenzuela			
+TOSO:0000030	Sex chromosome morphology			Karyotype feature								
+TOSO:0000031	homomorphic	homomorphic	Karyotype_value	Sex chromosome morphology					Nicole Valenzuela			
+TOSO:0000032	heteromorphic			Sex chromosome morphology								
+TOSO:0000033	Sex chromosome system											
+TOSO:0000034	heterogamety			Sex chromosome system								
+TOSO:0000035	male heterogamety			Sex chromosome system								
+TOSO:0000036	female heterogamety			Sex chromosome system								
+TOSO:0000037	Sexual system characteristic		Sexual system									Candidate for alignment with PATO?
+TOSO:0000038	hermaphrodite	hermaphrodite	Sexual system_value	Sexual system characteristic					Chiara			
+TOSO:0000039	monoecy	monoecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000040	dioecy	dioecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000041	gynodioecy	gynodioecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000042	androdioecy	androdioecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000043	gynomonoecy	gynomonoecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000044	andromonoecy	andromonoecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000045	polygamodioecy	polygamodioecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000046	polygamomonoecy	polygamomonoecy	Sexual system_value	Sexual system characteristic								
+TOSO:0000047	apomictic	apomictic	Sexual system_value	Sexual system characteristic		OMIT:0027849		We should call it "apomixis (sensu plantae)"	Kamil Jaron	use-synonym		
+TOSO:0000048	gonochorous	gonochorous	Sexual system_value	Sexual system characteristic								
+TOSO:0000049	hermaphrodite	hermaphrodite	Sexual system_value	Sexual system characteristic								
+TOSO:0000050	parthenogenetic	parthenogenetic	Sexual system_value	Sexual system characteristic		OMIT:0011307		Ok, here is a question - can we add crosslinks between two imported terms? apomixis should be synonim of parthenogenesis (I guess). ANd they should be also equipped with "obligate quantifier". E.g. we can reuse the terms, but it would be nice to build more on them	Kamil Jaron	use-synonym		
+TOSO:0000051	sex determination											
+TOSO:0000052	Genotypic sex determination		Genotypic	sex determination			had to remove the (GSD) in brackets. If you want it, add it everywhere (in parents AND label columns)		Lukáš Kratochvíl			
+TOSO:0000053	GSD	GSD	Genotypic_value	sex determination	Synonym	GSSO:000108	Isnt this the same as the above?	Edina: I just added the link for the purpose of the ToS2 workshop	Edina	use-main_term		
+TOSO:0000054	male heterogametic sex determination	male heterogametic	Genotypic_value	Genotypic sex determination					Lukáš Kratochvíl			
+TOSO:0000055	female heterogametic sex determination	female heterogametic	Genotypic_value	Genotypic sex determination					Lukáš Kratochvíl			
+TOSO:0000056	polygenic	polygenic	Genotypic_value	Genotypic sex determination		GENO:0000932		Edina: maybe call it "polygenic sex determination" instead?; I just added the link for the purpose of the ToS2 workshop, but I think the definition is not specific enough.	Edina	use-synonym		
+TOSO:0000057	Haplodiploidy		Haplodiploidy	Genotypic sex determination		GSSO:000121		Edina: I just added the link for the purpose of the ToS2 workshop	Edina	use-main_term		
+TOSO:0000058	arrhenotoky	arrhenotoky	Haplodiploidy_value	Haplodiploidy								
+TOSO:0000059	paternal genome elimination	paternal genome elimination	Haplodiploidy_value	Haplodiploidy								
+TOSO:0000060	Environmental sex determination (ESD)		Environmental sex determination (ESD)	sex determination	Only in vertebrates				Nicole Valenzuela	create_ToS_definition	environmental_sex_determination_OOT	
+TOSO:0000061	Temperature-dependent sex determination (TSD)	TSD	Environmental_value	Environmental sex determination (ESD)	Only in vertebrates				Nicole Valenzuela		TSD_OOT	
+TOSO:0000062	Temperature-dependent sex determination (TSD Ia; MF)	TSD Ia	Environmental_value	Temperature-dependent sex determination (TSD)	Only in vertebrates			Edina: No definition in OLS.	Edina	create_ToS_definition	FM_TSD_Ia_OOT	
+TOSO:0000063	Temperature-dependent sex determination (TSD Ib; FM)	,TSD Ib	Environmental_value	Temperature-dependent sex determination (TSD)	Only in vertebrates			Edina: No definition in OLS.	Edina	create_ToS_definition	MF_TSD_Ib_OOT	
+TOSO:0000064	Temperature-dependent sex determination (TSD II; MFM)	,TSD II	Environmental_value	Temperature-dependent sex determination (TSD)	Only in vertebrates			Edina: No definition in OLS.	Edina	create_ToS_definition	FMF_TSD_II_OOT	
+TOSO:0000065	Complex temperature-dependent sex determination (Complex TSD)			Temperature-dependent sex determination (TSD)								
+TOSO:0000066	Size-dependent sex determination	size	Environmental_value	Environmental sex determination (ESD)	Only in vertebrates	NCIT:C25681|NCIT:C45781		Astrid: I assume that the values Column C could be extended?  Column K refers to Column C	Astrid Böhne	use-main_term		
+TOSO:0000067	Density-dependent sex determination	density		Environmental sex determination (ESD)								
+TOSO:0000068	pH-dependent sex determination	pH	Environmental_value	Environmental sex determination (ESD)	Only in vertebrates	NCIT:C45997		Astrid: Couldnt this be listed as a value under the same category above? For the Ontology, I can of course find one that defines pH but is this what you are looking for?  Column K refers to Column C	Astrid Böhne	use-main_term		
+TOSO:0000069	Polyfactorial sex determination	yes,no	Polyfactorial	sex determination	Only in vertebrates	null		Astrid: should not only be applicable to vertebrates, I hence chose "needs conflict solving" but not sure this is what you meant, also I am unsure what to select in column J, this would also need a new ontology definition for the term polyfactorial	Astrid Böhne	needs-conflict-solving		
+TOSO:0000070	Molecular type of sex determination		Molecular basis of sex determination		Only in vertebrates and plants							
+TOSO:0000071	dosage	dosage	Molecular basis of sex determination_value	Molecular type of sex determination	Only in vertebrates and plants							
+TOSO:0000072	Y dominant	Y dominant	Molecular basis of sex determination_value	Molecular type of sex determination	Only in vertebrates and plants							
+TOSO:0000073	W dominant	W dominant	Molecular basis of sex determination_value	Molecular type of sex determination	Only in vertebrates and plants							
+TOSO:0000074	Hybrid		Hybrid		Only for plants							
+TOSO:0000075	Selfing ability		Selfing		Only for plants							
+TOSO:0000076	Self incompatible	self incompatible	Selfing_value	Selfing ability	Only for plants							
+TOSO:0000077	Self compatible	self compatible	Selfing_value	Selfing ability	Only for plants							
+TOSO:0000078	Growth Form				Only for plants				Ahammad Kabir			
+TOSO:0000079	Herb	herb	Growth Form_value	Growth Form	Only for plants				Ahammad Kabir			
+TOSO:0000080	Shrub	shrub	Growth Form_value	Growth Form	Only for plants				Ahammad Kabir			
+TOSO:0000081	Tree	tree	Growth Form_value	Growth Form	Only for plants				Ahammad Kabir			
+TOSO:0000082	Herbaceous vine,	herbaceous vine,	Growth Form_value	Growth Form	Only for plants				Ahammad Kabir			
+TOSO:0000083	Liana or woody vine	liana or woody vine	Growth Form_value	Growth Form	Only for plants				Ahammad Kabir			
+TOSO:0000084	Woodiness		Woodiness		Only for plants				Jie Wang			
+TOSO:0000085	W woodiness	W	Woodiness_value	Woodiness	Only for plants				Jie Wang			
+TOSO:0000086	H woodiness	H	Woodiness_value	Woodiness	Only for plants				Jie Wang			
+TOSO:0000087	variable woodiness	variable	Woodiness_value	Woodiness	Only for plants				Jie Wang			
+TOSO:0000088	Woodiness count		Woodiness count	Woodiness	Only for plants				Jie Wang			
+TOSO:0000089	Life form		Life Form		Only for plants				Quentin Cronk			
+TOSO:0000090	annual	annual	Life Form_value	Life form	Only for plants				Quentin Cronk			
+TOSO:0000091	perennial	perennial	Life Form_value	Life form	Only for plants				Quentin Cronk			
+TOSO:0000092	Gametophytic chromosome number		gametophytic chromosome number	Chromosome number	Only for plants				James Umen			
+TOSO:0000093	Sporophytic chromosome number		sporophytic chromosome number	Chromosome number	Only for plants				James Umen			
+TOSO:0000094	Gametophytic chromosome number (minimum)		gametophytic chromosome number (minimum)	Chromosome number	Only for plants				James Umen			
+TOSO:0000095	Gametophytic chromosome number (mean)		gametophytic chromosome number (mean)	Chromosome number	Only for plants				James Umen			
+TOSO:0000096	Sporophytic chromosome number (minimum)		sporophytic chromosome number (minimum)	Chromosome number	Only for plants				James Umen			
+TOSO:0000097	Sporophytic chromosome number (mean)		sporophytic chromosome number (mean)	Chromosome number	Only for plants				James Umen			
