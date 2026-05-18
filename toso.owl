@@ -11,11 +11,11 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/toso.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/toso/releases/2026-05-15/toso.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/toso/releases/2026-05-18/toso.owl"/>
         <dcterms:description xml:lang="en">The Tree of Sex ontology covers any trait related to reproduction included in the Tree of Sex database</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Tree of Sex ontology</dcterms:title>
-        <owl:versionInfo>2026-05-15</owl:versionInfo>
+        <owl:versionInfo>2026-05-18</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -34,6 +34,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000233 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000233"/>
     
 
 
@@ -82,6 +88,23 @@
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyUri -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyUri"/>
     
 
 
@@ -204,7 +227,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000004 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000004">
-        <rdfs:label>species</rdfs:label>
+        <rdfs:label>Species</rdfs:label>
     </owl:Class>
     
 
@@ -212,7 +235,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000005 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000005">
-        <rdfs:label>Karyotype feature</rdfs:label>
+        <obo:IAO_0000115>An organismal quality inhering in a bearer by virtue of the bearer&apos;s ability to produce new life or offspring.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>PATO:0001434</oboInOwl:hasDbXref>
+        <rdfs:label>Reproductive quality</rdfs:label>
     </owl:Class>
     
 
@@ -221,7 +246,12 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000006">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000005"/>
-        <rdfs:label>Chromosome number</rdfs:label>
+        <obo:IAO_0000115>Morphological pattern of sex allocation or distribution of male and female function across individuals in a species.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-5370-2370"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Sexual system</rdfs:label>
     </owl:Class>
     
 
@@ -230,7 +260,17 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000007">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Female chromosome number</rdfs:label>
+        <obo:IAO_0000115>A sexual system where both male and female sex organs are present.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-3515-729X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-5984-6815"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6085-3908"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8378-8168"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-4441-9615"/>
+        <rdfs:label>Hermaphroditism</rdfs:label>
     </owl:Class>
     
 
@@ -238,8 +278,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000008 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000008">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Male chromosome number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000007"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Simultaneous hermaphroditism</rdfs:label>
     </owl:Class>
     
 
@@ -247,9 +290,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000009 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000009">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000005"/>
-        <oboInOwl:hasDbXref>PATO:0001374</oboInOwl:hasDbXref>
-        <rdfs:label>Ploidy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000007"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Sequential hermaphroditism</rdfs:label>
     </owl:Class>
     
 
@@ -257,8 +302,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000010 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000010">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000005"/>
-        <rdfs:label>Predicted ploidy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000009"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>bidirectional sex-change</rdfs:label>
     </owl:Class>
     
 
@@ -266,8 +314,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000011 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000011">
-        <oboInOwl:hasDbXref>PLANA:0002021</oboInOwl:hasDbXref>
-        <rdfs:label>Chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000009"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>protandry</rdfs:label>
     </owl:Class>
     
 
@@ -275,9 +326,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000012 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000012">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000011"/>
-        <oboInOwl:hasDbXref>GO:0000228</oboInOwl:hasDbXref>
-        <rdfs:label>Nuclear chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000009"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>protogyny</rdfs:label>
     </owl:Class>
     
 
@@ -285,8 +338,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000013 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000013">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000012"/>
-        <rdfs:label>Sex chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000007"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Obligate hermaphroditism</rdfs:label>
     </owl:Class>
     
 
@@ -294,8 +350,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000014 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000014">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000013"/>
-        <rdfs:label>X chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000007"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/99</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Facultative hermaphroditism</rdfs:label>
     </owl:Class>
     
 
@@ -303,8 +362,17 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000015 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000015">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000013"/>
-        <rdfs:label>Y chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which plants have separate male and female flowers on the same plant.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/14</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8778-2110"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6085-3908"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Monoecy</rdfs:label>
     </owl:Class>
     
 
@@ -312,8 +380,15 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000016 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000016">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000013"/>
-        <rdfs:label>Z chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system of plants in which all individuals in a population are either female or male.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/25</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Dioecy</rdfs:label>
     </owl:Class>
     
 
@@ -321,8 +396,14 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000017 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000017">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000013"/>
-        <rdfs:label>W chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which anisogamous (different) gametes are produced in separate individuals.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/25</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Gonochorism</rdfs:label>
     </owl:Class>
     
 
@@ -330,8 +411,17 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000018 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000018">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000013"/>
-        <rdfs:label>U chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which females and hermaphroditic plants coexist in the same population.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri"> https://github.com/Tree-of-Sex/ToS-Ontology/issues/12</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6085-3908"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-6789-6564"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <oboInOwl:hasDbXref>GSSO:011873</oboInOwl:hasDbXref>
+        <rdfs:label>Gynodioecy</rdfs:label>
     </owl:Class>
     
 
@@ -339,8 +429,16 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000019 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000019">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000013"/>
-        <rdfs:label>V chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which males and hermaphrodites coexist in a population.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/33</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/92</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8487-9248"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <oboInOwl:hasDbXref>GSSO:011874</oboInOwl:hasDbXref>
+        <rdfs:label>Androdioecy</rdfs:label>
     </owl:Class>
     
 
@@ -348,8 +446,15 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000020 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000020">
-        <oboInOwl:hasDbXref>GENO:0000644</oboInOwl:hasDbXref>
-        <rdfs:label>Karyotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which female and hermaphrodite flowers are present within a plant.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8378-8168"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Gynomonoecy</rdfs:label>
     </owl:Class>
     
 
@@ -357,7 +462,16 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000021 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000021">
-        <rdfs:label>Sex chromosome karyotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which in which male and hermaphrodite flowers are present within a plant.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/39</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0001-8949-7479"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-8378-8168"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Andromonoecy</rdfs:label>
     </owl:Class>
     
 
@@ -365,8 +479,15 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000022 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000022">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000021"/>
-        <rdfs:label>ZO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which male, female, and hermaphrodite plants present in a population.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/62</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1701-3978"/>
+        <rdfs:label>Polygamodioecy</rdfs:label>
     </owl:Class>
     
 
@@ -374,8 +495,15 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000023 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000023">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000021"/>
-        <rdfs:label>ZW</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
+        <obo:IAO_0000115>A sexual system in which male, female, and hermaphrodite flowers are present within a plant.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1701-3978"/>
+        <oboInOwl:hasDbXref>GSSO:011864</oboInOwl:hasDbXref>
+        <rdfs:label>Polygamomonoecy</rdfs:label>
     </owl:Class>
     
 
@@ -383,8 +511,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000024 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000024">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000021"/>
-        <rdfs:label>XY</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000005"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1470-5450"/>
+        <rdfs:label>Asexual system</rdfs:label>
     </owl:Class>
     
 
@@ -392,8 +521,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000025 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000025">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000021"/>
-        <rdfs:label>XO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000024"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>OMIT:0027849</oboInOwl:hasDbXref>
+        <rdfs:label>Apomixis</rdfs:label>
     </owl:Class>
     
 
@@ -401,8 +533,10 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000026 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000026">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000021"/>
-        <rdfs:label>WO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000024"/>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <oboInOwl:hasDbXref>OMIT:0011307</oboInOwl:hasDbXref>
+        <rdfs:label>Parthenogenesis</rdfs:label>
     </owl:Class>
     
 
@@ -410,8 +544,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000027 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000027">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000021"/>
-        <rdfs:label>Complex sex chromosome karyotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000026"/>
+        <rdfs:label>Obligate parthenogenesis</rdfs:label>
     </owl:Class>
     
 
@@ -419,8 +553,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000028 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000028">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000027"/>
-        <rdfs:label>Complex XY</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000024"/>
+        <rdfs:label>Gynogenesis</rdfs:label>
     </owl:Class>
     
 
@@ -428,8 +562,10 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000029 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000029">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000027"/>
-        <rdfs:label>Complex ZW</rdfs:label>
+        <obo:IAO_0000115>A quality where both male and female sex organs are present in a biological entity </obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <rdfs:label>Hermaphrodite</rdfs:label>
     </owl:Class>
     
 
@@ -437,8 +573,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000030 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000030">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000005"/>
-        <rdfs:label>Sex chromosome morphology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000029"/>
+        <obo:IAO_0000115>Individual that contains both male and female sex organs.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <rdfs:label>Hermaphrodite individual</rdfs:label>
     </owl:Class>
     
 
@@ -446,8 +585,11 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000031 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000031">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000030"/>
-        <rdfs:label>homomorphic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000029"/>
+        <obo:IAO_0000115>Flower that contains both male and female sex organs</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <rdfs:label>Hermaphrodite flower</rdfs:label>
     </owl:Class>
     
 
@@ -455,25 +597,25 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000032 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000032">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000030"/>
-        <rdfs:label>heteromorphic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000029"/>
+        <obo:IAO_0000115>A hermaphrodite (individual) with both female (part) flowers and hermpahrodite (part) flowers on the same plant</obo:IAO_0000115>
+        <rdfs:label>Gynomonoecious indivudual</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://w3id.org/toso/vocab/TOSO_0000033 -->
 
-    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000033">
-        <rdfs:label>Sex chromosome system</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000033"/>
     
 
 
     <!-- http://w3id.org/toso/vocab/TOSO_0000034 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000034">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000033"/>
-        <rdfs:label>heterogamety</rdfs:label>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/37</obo:IAO_0000233>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <rdfs:label>Gonochorous</rdfs:label>
     </owl:Class>
     
 
@@ -481,8 +623,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000035 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000035">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000033"/>
-        <rdfs:label>male heterogamety</rdfs:label>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/41</obo:IAO_0000233>
+        <rdfs:label>Parthenogenetic</rdfs:label>
     </owl:Class>
     
 
@@ -490,8 +632,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000036 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000036">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000033"/>
-        <rdfs:label>female heterogamety</rdfs:label>
+        <rdfs:label>Sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -499,7 +640,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000037 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000037">
-        <rdfs:label>Sexual system characteristic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000036"/>
+        <oboInOwl:hasDbXref>GSSO:000108</oboInOwl:hasDbXref>
+        <rdfs:label>Genotypic sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -508,7 +651,7 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000038">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>hermaphrodite</rdfs:label>
+        <rdfs:label>Male heterogametic sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -517,7 +660,7 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000039">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>monoecy</rdfs:label>
+        <rdfs:label>Female heterogametic sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -526,7 +669,8 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000040">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>dioecy</rdfs:label>
+        <oboInOwl:hasDbXref>GENO:0000932</oboInOwl:hasDbXref>
+        <rdfs:label>Polygenic</rdfs:label>
     </owl:Class>
     
 
@@ -535,7 +679,8 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000041">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>gynodioecy</rdfs:label>
+        <oboInOwl:hasDbXref>GSSO:000121</oboInOwl:hasDbXref>
+        <rdfs:label>Haplodiploidy</rdfs:label>
     </owl:Class>
     
 
@@ -543,8 +688,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000042 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000042">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>androdioecy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000041"/>
+        <rdfs:label>Arrhenotoky</rdfs:label>
     </owl:Class>
     
 
@@ -552,8 +697,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000043 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000043">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>gynomonoecy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000041"/>
+        <rdfs:label>Paternal genome elimination</rdfs:label>
     </owl:Class>
     
 
@@ -561,8 +706,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000044 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000044">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>andromonoecy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000036"/>
+        <rdfs:label>Environmental sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -570,8 +715,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000045 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000045">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>polygamodioecy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000044"/>
+        <rdfs:label>Temperature-dependent sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -579,8 +724,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000046 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000046">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>polygamomonoecy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000045"/>
+        <rdfs:label>Temperature-dependent sex determination (TSD Ia; MF)</rdfs:label>
     </owl:Class>
     
 
@@ -588,9 +733,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000047 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000047">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <oboInOwl:hasDbXref>OMIT:0027849</oboInOwl:hasDbXref>
-        <rdfs:label>apomictic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000045"/>
+        <rdfs:label>Temperature-dependent sex determination (TSD Ib; FM)</rdfs:label>
     </owl:Class>
     
 
@@ -598,8 +742,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000048 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000048">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>gonochorous</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000045"/>
+        <rdfs:label>Temperature-dependent sex determination (TSD II; MFM)</rdfs:label>
     </owl:Class>
     
 
@@ -607,8 +751,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000049 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000049">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <rdfs:label>hermaphrodite</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000045"/>
+        <rdfs:label>Complex temperature-dependent sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -616,9 +760,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000050 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000050">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000037"/>
-        <oboInOwl:hasDbXref>OMIT:0011307</oboInOwl:hasDbXref>
-        <rdfs:label>parthenogenetic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000044"/>
+        <oboInOwl:hasDbXref>NCIT:C25681|NCIT:C45781</oboInOwl:hasDbXref>
+        <rdfs:label>Size-dependent sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -626,7 +770,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000051 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000051">
-        <rdfs:label>sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000044"/>
+        <rdfs:label>Density-dependent sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -634,8 +779,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000052 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000052">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000051"/>
-        <rdfs:label>Genotypic sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000044"/>
+        <oboInOwl:hasDbXref>NCIT:C45997</oboInOwl:hasDbXref>
+        <rdfs:label>PH-dependent sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -643,9 +789,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000053 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000053">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000051"/>
-        <oboInOwl:hasDbXref>GSSO:000108</oboInOwl:hasDbXref>
-        <rdfs:label>GSD</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000036"/>
+        <oboInOwl:hasDbXref>null</oboInOwl:hasDbXref>
+        <rdfs:label>Polyfactorial sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -653,8 +799,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000054 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000054">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000052"/>
-        <rdfs:label>male heterogametic sex determination</rdfs:label>
+        <rdfs:label>Molecular type of sex determination</rdfs:label>
     </owl:Class>
     
 
@@ -662,8 +807,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000055 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000055">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000052"/>
-        <rdfs:label>female heterogametic sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000054"/>
+        <rdfs:label>Dosage</rdfs:label>
     </owl:Class>
     
 
@@ -671,9 +816,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000056 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000056">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000052"/>
-        <oboInOwl:hasDbXref>GENO:0000932</oboInOwl:hasDbXref>
-        <rdfs:label>polygenic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000054"/>
+        <rdfs:label>Y dominant</rdfs:label>
     </owl:Class>
     
 
@@ -681,9 +825,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000057 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000057">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000052"/>
-        <oboInOwl:hasDbXref>GSSO:000121</oboInOwl:hasDbXref>
-        <rdfs:label>Haplodiploidy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000054"/>
+        <rdfs:label>W dominant</rdfs:label>
     </owl:Class>
     
 
@@ -691,8 +834,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000058 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000058">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000057"/>
-        <rdfs:label>arrhenotoky</rdfs:label>
+        <rdfs:label>Hybrid</rdfs:label>
     </owl:Class>
     
 
@@ -700,8 +842,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000059 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000059">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000057"/>
-        <rdfs:label>paternal genome elimination</rdfs:label>
+        <rdfs:label>Selfing ability</rdfs:label>
     </owl:Class>
     
 
@@ -709,8 +850,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000060 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000060">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000051"/>
-        <rdfs:label>Environmental sex determination (ESD)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000059"/>
+        <rdfs:label>Self incompatible</rdfs:label>
     </owl:Class>
     
 
@@ -718,8 +859,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000061 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000061">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000060"/>
-        <rdfs:label>Temperature-dependent sex determination (TSD)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000059"/>
+        <rdfs:label>Self compatible</rdfs:label>
     </owl:Class>
     
 
@@ -727,8 +868,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000062 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000062">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000061"/>
-        <rdfs:label>Temperature-dependent sex determination (TSD Ia; MF)</rdfs:label>
+        <rdfs:label>Growth Form</rdfs:label>
     </owl:Class>
     
 
@@ -736,8 +876,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000063 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000063">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000061"/>
-        <rdfs:label>Temperature-dependent sex determination (TSD Ib; FM)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000062"/>
+        <rdfs:label>Herb</rdfs:label>
     </owl:Class>
     
 
@@ -745,8 +885,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000064 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000064">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000061"/>
-        <rdfs:label>Temperature-dependent sex determination (TSD II; MFM)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000062"/>
+        <rdfs:label>Shrub</rdfs:label>
     </owl:Class>
     
 
@@ -754,8 +894,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000065 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000065">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000061"/>
-        <rdfs:label>Complex temperature-dependent sex determination (Complex TSD)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000062"/>
+        <rdfs:label>Tree</rdfs:label>
     </owl:Class>
     
 
@@ -763,9 +903,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000066 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000066">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000060"/>
-        <oboInOwl:hasDbXref>NCIT:C25681|NCIT:C45781</oboInOwl:hasDbXref>
-        <rdfs:label>Size-dependent sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000062"/>
+        <rdfs:label>Herbaceous vine,</rdfs:label>
     </owl:Class>
     
 
@@ -773,8 +912,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000067 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000067">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000060"/>
-        <rdfs:label>Density-dependent sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000062"/>
+        <rdfs:label>Liana or woody vine</rdfs:label>
     </owl:Class>
     
 
@@ -782,9 +921,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000068 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000068">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000060"/>
-        <oboInOwl:hasDbXref>NCIT:C45997</oboInOwl:hasDbXref>
-        <rdfs:label>pH-dependent sex determination</rdfs:label>
+        <rdfs:label>Woodiness</rdfs:label>
     </owl:Class>
     
 
@@ -792,9 +929,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000069 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000069">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000051"/>
-        <oboInOwl:hasDbXref>null</oboInOwl:hasDbXref>
-        <rdfs:label>Polyfactorial sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000068"/>
+        <rdfs:label>W woodiness</rdfs:label>
     </owl:Class>
     
 
@@ -802,7 +938,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000070 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000070">
-        <rdfs:label>Molecular type of sex determination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000068"/>
+        <rdfs:label>H woodiness</rdfs:label>
     </owl:Class>
     
 
@@ -810,8 +947,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000071 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000071">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000070"/>
-        <rdfs:label>dosage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000068"/>
+        <rdfs:label>Variable woodiness</rdfs:label>
     </owl:Class>
     
 
@@ -819,8 +956,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000072 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000072">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000070"/>
-        <rdfs:label>Y dominant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000068"/>
+        <rdfs:label>Woodiness count</rdfs:label>
     </owl:Class>
     
 
@@ -828,8 +965,7 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000073 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000073">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000070"/>
-        <rdfs:label>W dominant</rdfs:label>
+        <rdfs:label>Life form</rdfs:label>
     </owl:Class>
     
 
@@ -837,7 +973,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000074 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000074">
-        <rdfs:label>Hybrid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000073"/>
+        <rdfs:label>Annual</rdfs:label>
     </owl:Class>
     
 
@@ -845,7 +982,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000075 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000075">
-        <rdfs:label>Selfing ability</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000073"/>
+        <rdfs:label>Perennial</rdfs:label>
     </owl:Class>
     
 
@@ -853,8 +991,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000076 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000076">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000075"/>
-        <rdfs:label>Self incompatible</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
+        <rdfs:label>Gametophytic chromosome number</rdfs:label>
     </owl:Class>
     
 
@@ -862,8 +1000,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000077 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000077">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000075"/>
-        <rdfs:label>Self compatible</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
+        <rdfs:label>Sporophytic chromosome number</rdfs:label>
     </owl:Class>
     
 
@@ -871,7 +1009,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000078 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000078">
-        <rdfs:label>Growth Form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
+        <rdfs:label>Gametophytic chromosome number (minimum)</rdfs:label>
     </owl:Class>
     
 
@@ -879,8 +1018,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000079 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000079">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000078"/>
-        <rdfs:label>Herb</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
+        <rdfs:label>Gametophytic chromosome number (mean)</rdfs:label>
     </owl:Class>
     
 
@@ -888,8 +1027,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000080 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000080">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000078"/>
-        <rdfs:label>Shrub</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
+        <rdfs:label>Sporophytic chromosome number (minimum)</rdfs:label>
     </owl:Class>
     
 
@@ -897,8 +1036,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000081 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000081">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000078"/>
-        <rdfs:label>Tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
+        <rdfs:label>Sporophytic chromosome number (mean)</rdfs:label>
     </owl:Class>
     
 
@@ -906,8 +1045,20 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000082 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000082">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000078"/>
-        <rdfs:label>Herbaceous vine,</rdfs:label>
+        <obo:IAO_0000115>A collection of features used to describe the chromosomal complement in a cell, including the number of chromosomes and their morphology.</obo:IAO_0000115>
+        <obo:IAO_0000233 rdf:datatype="http://www.w3.org/2001/XMLSchema#anyUri">https://github.com/Tree-of-Sex/ToS-Ontology/issues/8</obo:IAO_0000233>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-0179-1153"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-1284-3115"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-3112-0000"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-3143-0527"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-3515-729X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-3780-5748"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-4651-3704"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0002-5708-1433"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1148-631X"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-1480-0976"/>
+        <dcterms:contributor rdf:resource="https://orcid.org/0000-0003-4441-9615"/>
+        <rdfs:label>Karyotype</rdfs:label>
     </owl:Class>
     
 
@@ -915,8 +1066,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000083 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000083">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000078"/>
-        <rdfs:label>Liana or woody vine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000099"/>
+        <obo:IAO_0000115>A feature that can be used to describe a karyotype</obo:IAO_0000115>
+        <rdfs:label>Karyotype feature</rdfs:label>
     </owl:Class>
     
 
@@ -924,7 +1076,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000084 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000084">
-        <rdfs:label>Woodiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000083"/>
+        <rdfs:label>Chromosome number</rdfs:label>
     </owl:Class>
     
 
@@ -933,7 +1086,7 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000085">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
-        <rdfs:label>W woodiness</rdfs:label>
+        <rdfs:label>Female chromosome number</rdfs:label>
     </owl:Class>
     
 
@@ -942,7 +1095,7 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000086">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
-        <rdfs:label>H woodiness</rdfs:label>
+        <rdfs:label>Male chromosome number</rdfs:label>
     </owl:Class>
     
 
@@ -950,8 +1103,9 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000087 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000087">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
-        <rdfs:label>variable woodiness</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000083"/>
+        <oboInOwl:hasDbXref>PATO:0001374</oboInOwl:hasDbXref>
+        <rdfs:label>Ploidy</rdfs:label>
     </owl:Class>
     
 
@@ -959,8 +1113,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000088 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000088">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000084"/>
-        <rdfs:label>Woodiness count</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000083"/>
+        <rdfs:label>Predicted ploidy</rdfs:label>
     </owl:Class>
     
 
@@ -968,7 +1122,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000089 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000089">
-        <rdfs:label>Life form</rdfs:label>
+        <oboInOwl:hasDbXref>PLANA:0002021</oboInOwl:hasDbXref>
+        <rdfs:label>Chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -977,7 +1132,8 @@
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000090">
         <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000089"/>
-        <rdfs:label>annual</rdfs:label>
+        <oboInOwl:hasDbXref>GO:0000228</oboInOwl:hasDbXref>
+        <rdfs:label>Nuclear chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -985,8 +1141,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000091 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000091">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000089"/>
-        <rdfs:label>perennial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000090"/>
+        <rdfs:label>B chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -994,8 +1150,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000092 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000092">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Gametophytic chromosome number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000090"/>
+        <rdfs:label>Sex chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -1003,8 +1159,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000093 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000093">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Sporophytic chromosome number</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000092"/>
+        <rdfs:label>X chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -1012,8 +1168,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000094 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000094">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Gametophytic chromosome number (minimum)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000092"/>
+        <rdfs:label>Y chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -1021,8 +1177,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000095 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000095">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Gametophytic chromosome number (mean)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000092"/>
+        <rdfs:label>Z chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -1030,8 +1186,8 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000096 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000096">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Sporophytic chromosome number (minimum)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000092"/>
+        <rdfs:label>W chromosome</rdfs:label>
     </owl:Class>
     
 
@@ -1039,8 +1195,169 @@
     <!-- http://w3id.org/toso/vocab/TOSO_0000097 -->
 
     <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000097">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000006"/>
-        <rdfs:label>Sporophytic chromosome number (mean)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000092"/>
+        <rdfs:label>U chromosome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000098 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000098">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000092"/>
+        <rdfs:label>V chromosome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000099 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000099">
+        <oboInOwl:hasDbXref>GENO:0000644</oboInOwl:hasDbXref>
+        <rdfs:label>Karyotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000100 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000100">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000099"/>
+        <rdfs:label>Sex chromosome karyotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000101 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000101">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000100"/>
+        <rdfs:label>ZO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000102 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000102">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000100"/>
+        <rdfs:label>ZW</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000103 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000103">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000100"/>
+        <rdfs:label>XY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000104 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000104">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000100"/>
+        <rdfs:label>XO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000105 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000105">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000100"/>
+        <rdfs:label>WO</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000106 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000106">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000100"/>
+        <rdfs:label>Complex sex chromosome karyotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000107 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000107">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000106"/>
+        <rdfs:label>Complex XY</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000108 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000108">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000106"/>
+        <rdfs:label>Complex ZW</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000109 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000109">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000083"/>
+        <rdfs:label>Sex chromosome karyotype morphology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000110 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000110">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000109"/>
+        <rdfs:label>Homomorphic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000111 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000111">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000109"/>
+        <rdfs:label>Heteromorphic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000112 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000112">
+        <rdfs:label>Sex chromosome system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000113 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000113">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000112"/>
+        <rdfs:label>Heterogamety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000114 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000114">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000112"/>
+        <rdfs:label>Male heterogamety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/toso/vocab/TOSO_0000115 -->
+
+    <owl:Class rdf:about="http://w3id.org/toso/vocab/TOSO_0000115">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/toso/vocab/TOSO_0000112"/>
+        <rdfs:label>Female heterogamety</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

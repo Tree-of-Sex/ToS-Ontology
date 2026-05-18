@@ -1,5 +1,5 @@
 format-version: 1.2
-data-version: releases/2026-05-15
+data-version: releases/2026-05-18
 idspace: dce http://purl.org/dc/elements/1.1/ 
 idspace: dcterms http://purl.org/dc/terms/ 
 idspace: oboInOwl http://www.geneontology.org/formats/oboInOwl# 
@@ -7,7 +7,7 @@ ontology: toso
 property_value: dcterms:description "The Tree of Sex ontology covers any trait related to reproduction included in the Tree of Sex database" xsd:string
 property_value: dcterms:license https://creativecommons.org/licenses/unspecified
 property_value: dcterms:title "Tree of Sex ontology" xsd:string
-property_value: owl:versionInfo "2026-05-15" xsd:string
+property_value: owl:versionInfo "2026-05-18" xsd:string
 
 [Term]
 id: PATO:0000001
@@ -54,469 +54,635 @@ name: Genus
 
 [Term]
 id: TOSO:0000004
-name: species
+name: Species
 
 [Term]
 id: TOSO:0000005
-name: Karyotype feature
+name: Reproductive quality
+def: "An organismal quality inhering in a bearer by virtue of the bearer's ability to produce new life or offspring." []
+xref: PATO:0001434
 
 [Term]
 id: TOSO:0000006
-name: Chromosome number
-is_a: TOSO:0000005 ! Karyotype feature
+name: Sexual system
+def: "Morphological pattern of sex allocation or distribution of male and female function across individuals in a species." []
+is_a: TOSO:0000005 ! Reproductive quality
+property_value: dcterms:contributor https://orcid.org/0000-0001-5370-2370
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
 
 [Term]
 id: TOSO:0000007
-name: Female chromosome number
-is_a: TOSO:0000006 ! Chromosome number
+name: Hermaphroditism
+def: "A sexual system where both male and female sex organs are present." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0002-3515-729X
+property_value: dcterms:contributor https://orcid.org/0000-0002-5984-6815
+property_value: dcterms:contributor https://orcid.org/0000-0002-6085-3908
+property_value: dcterms:contributor https://orcid.org/0000-0002-8378-8168
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+property_value: dcterms:contributor https://orcid.org/0000-0003-4441-9615
 
 [Term]
 id: TOSO:0000008
-name: Male chromosome number
-is_a: TOSO:0000006 ! Chromosome number
+name: Simultaneous hermaphroditism
+is_a: TOSO:0000007 ! Hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
 
 [Term]
 id: TOSO:0000009
-name: Ploidy
-xref: PATO:0001374
-is_a: TOSO:0000005 ! Karyotype feature
+name: Sequential hermaphroditism
+is_a: TOSO:0000007 ! Hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
 
 [Term]
 id: TOSO:0000010
-name: Predicted ploidy
-is_a: TOSO:0000005 ! Karyotype feature
+name: bidirectional sex-change
+is_a: TOSO:0000009 ! Sequential hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
 
 [Term]
 id: TOSO:0000011
+name: protandry
+is_a: TOSO:0000009 ! Sequential hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000012
+name: protogyny
+is_a: TOSO:0000009 ! Sequential hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000013
+name: Obligate hermaphroditism
+is_a: TOSO:0000007 ! Hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000014
+name: Facultative hermaphroditism
+is_a: TOSO:0000007 ! Hermaphroditism
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000015
+name: Monoecy
+def: "A sexual system in which plants have separate male and female flowers on the same plant." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8778-2110
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0002-6085-3908
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000016
+name: Dioecy
+def: "A sexual system of plants in which all individuals in a population are either female or male." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000017
+name: Gonochorism
+def: "A sexual system in which anisogamous (different) gametes are produced in separate individuals." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000018
+name: Gynodioecy
+def: "A sexual system in which females and hermaphroditic plants coexist in the same population." []
+xref: GSSO:011873
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0002-6085-3908
+property_value: dcterms:contributor https://orcid.org/0000-0002-6789-6564
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000019
+name: Androdioecy
+def: "A sexual system in which males and hermaphrodites coexist in a population." []
+xref: GSSO:011874
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0002-8487-9248
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+
+[Term]
+id: TOSO:0000020
+name: Gynomonoecy
+def: "A sexual system in which female and hermaphrodite flowers are present within a plant." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0002-8378-8168
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000021
+name: Andromonoecy
+def: "A sexual system in which in which male and hermaphrodite flowers are present within a plant." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0001-8949-7479
+property_value: dcterms:contributor https://orcid.org/0000-0002-8378-8168
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000022
+name: Polygamodioecy
+def: "A sexual system in which male, female, and hermaphrodite plants present in a population." []
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+property_value: dcterms:contributor https://orcid.org/0000-0003-1701-3978
+
+[Term]
+id: TOSO:0000023
+name: Polygamomonoecy
+def: "A sexual system in which male, female, and hermaphrodite flowers are present within a plant." []
+xref: GSSO:011864
+is_a: TOSO:0000006 ! Sexual system
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+property_value: dcterms:contributor https://orcid.org/0000-0003-1701-3978
+
+[Term]
+id: TOSO:0000024
+name: Asexual system
+is_a: TOSO:0000005 ! Reproductive quality
+property_value: dcterms:contributor https://orcid.org/0000-0003-1470-5450
+
+[Term]
+id: TOSO:0000025
+name: Apomixis
+xref: OMIT:0027849
+is_a: TOSO:0000024 ! Asexual system
+
+[Term]
+id: TOSO:0000026
+name: Parthenogenesis
+xref: OMIT:0011307
+is_a: TOSO:0000024 ! Asexual system
+
+[Term]
+id: TOSO:0000027
+name: Obligate parthenogenesis
+is_a: TOSO:0000026 ! Parthenogenesis
+
+[Term]
+id: TOSO:0000028
+name: Gynogenesis
+is_a: TOSO:0000024 ! Asexual system
+
+[Term]
+id: TOSO:0000029
+name: Hermaphrodite
+def: "A quality where both male and female sex organs are present in a biological entity " []
+
+[Term]
+id: TOSO:0000030
+name: Hermaphrodite individual
+def: "Individual that contains both male and female sex organs." []
+is_a: TOSO:0000029 ! Hermaphrodite
+
+[Term]
+id: TOSO:0000031
+name: Hermaphrodite flower
+def: "Flower that contains both male and female sex organs" []
+is_a: TOSO:0000029 ! Hermaphrodite
+
+[Term]
+id: TOSO:0000032
+name: Gynomonoecious indivudual
+def: "A hermaphrodite (individual) with both female (part) flowers and hermpahrodite (part) flowers on the same plant" []
+is_a: TOSO:0000029 ! Hermaphrodite
+
+[Term]
+id: TOSO:0000034
+name: Gonochorous
+
+[Term]
+id: TOSO:0000035
+name: Parthenogenetic
+
+[Term]
+id: TOSO:0000036
+name: Sex determination
+
+[Term]
+id: TOSO:0000037
+name: Genotypic sex determination
+xref: GSSO:000108
+is_a: TOSO:0000036 ! Sex determination
+
+[Term]
+id: TOSO:0000038
+name: Male heterogametic sex determination
+is_a: TOSO:0000037 ! Genotypic sex determination
+
+[Term]
+id: TOSO:0000039
+name: Female heterogametic sex determination
+is_a: TOSO:0000037 ! Genotypic sex determination
+
+[Term]
+id: TOSO:0000040
+name: Polygenic
+xref: GENO:0000932
+is_a: TOSO:0000037 ! Genotypic sex determination
+
+[Term]
+id: TOSO:0000041
+name: Haplodiploidy
+xref: GSSO:000121
+is_a: TOSO:0000037 ! Genotypic sex determination
+
+[Term]
+id: TOSO:0000042
+name: Arrhenotoky
+is_a: TOSO:0000041 ! Haplodiploidy
+
+[Term]
+id: TOSO:0000043
+name: Paternal genome elimination
+is_a: TOSO:0000041 ! Haplodiploidy
+
+[Term]
+id: TOSO:0000044
+name: Environmental sex determination
+is_a: TOSO:0000036 ! Sex determination
+
+[Term]
+id: TOSO:0000045
+name: Temperature-dependent sex determination
+is_a: TOSO:0000044 ! Environmental sex determination
+
+[Term]
+id: TOSO:0000046
+name: Temperature-dependent sex determination (TSD Ia; MF)
+is_a: TOSO:0000045 ! Temperature-dependent sex determination
+
+[Term]
+id: TOSO:0000047
+name: Temperature-dependent sex determination (TSD Ib; FM)
+is_a: TOSO:0000045 ! Temperature-dependent sex determination
+
+[Term]
+id: TOSO:0000048
+name: Temperature-dependent sex determination (TSD II; MFM)
+is_a: TOSO:0000045 ! Temperature-dependent sex determination
+
+[Term]
+id: TOSO:0000049
+name: Complex temperature-dependent sex determination
+is_a: TOSO:0000045 ! Temperature-dependent sex determination
+
+[Term]
+id: TOSO:0000050
+name: Size-dependent sex determination
+xref: NCIT:C25681|NCIT\:C45781
+is_a: TOSO:0000044 ! Environmental sex determination
+
+[Term]
+id: TOSO:0000051
+name: Density-dependent sex determination
+is_a: TOSO:0000044 ! Environmental sex determination
+
+[Term]
+id: TOSO:0000052
+name: PH-dependent sex determination
+xref: NCIT:C45997
+is_a: TOSO:0000044 ! Environmental sex determination
+
+[Term]
+id: TOSO:0000053
+name: Polyfactorial sex determination
+xref: null
+is_a: TOSO:0000036 ! Sex determination
+
+[Term]
+id: TOSO:0000054
+name: Molecular type of sex determination
+
+[Term]
+id: TOSO:0000055
+name: Dosage
+is_a: TOSO:0000054 ! Molecular type of sex determination
+
+[Term]
+id: TOSO:0000056
+name: Y dominant
+is_a: TOSO:0000054 ! Molecular type of sex determination
+
+[Term]
+id: TOSO:0000057
+name: W dominant
+is_a: TOSO:0000054 ! Molecular type of sex determination
+
+[Term]
+id: TOSO:0000058
+name: Hybrid
+
+[Term]
+id: TOSO:0000059
+name: Selfing ability
+
+[Term]
+id: TOSO:0000060
+name: Self incompatible
+is_a: TOSO:0000059 ! Selfing ability
+
+[Term]
+id: TOSO:0000061
+name: Self compatible
+is_a: TOSO:0000059 ! Selfing ability
+
+[Term]
+id: TOSO:0000062
+name: Growth Form
+
+[Term]
+id: TOSO:0000063
+name: Herb
+is_a: TOSO:0000062 ! Growth Form
+
+[Term]
+id: TOSO:0000064
+name: Shrub
+is_a: TOSO:0000062 ! Growth Form
+
+[Term]
+id: TOSO:0000065
+name: Tree
+is_a: TOSO:0000062 ! Growth Form
+
+[Term]
+id: TOSO:0000066
+name: Herbaceous vine,
+is_a: TOSO:0000062 ! Growth Form
+
+[Term]
+id: TOSO:0000067
+name: Liana or woody vine
+is_a: TOSO:0000062 ! Growth Form
+
+[Term]
+id: TOSO:0000068
+name: Woodiness
+
+[Term]
+id: TOSO:0000069
+name: W woodiness
+is_a: TOSO:0000068 ! Woodiness
+
+[Term]
+id: TOSO:0000070
+name: H woodiness
+is_a: TOSO:0000068 ! Woodiness
+
+[Term]
+id: TOSO:0000071
+name: Variable woodiness
+is_a: TOSO:0000068 ! Woodiness
+
+[Term]
+id: TOSO:0000072
+name: Woodiness count
+is_a: TOSO:0000068 ! Woodiness
+
+[Term]
+id: TOSO:0000073
+name: Life form
+
+[Term]
+id: TOSO:0000074
+name: Annual
+is_a: TOSO:0000073 ! Life form
+
+[Term]
+id: TOSO:0000075
+name: Perennial
+is_a: TOSO:0000073 ! Life form
+
+[Term]
+id: TOSO:0000076
+name: Gametophytic chromosome number
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000077
+name: Sporophytic chromosome number
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000078
+name: Gametophytic chromosome number (minimum)
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000079
+name: Gametophytic chromosome number (mean)
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000080
+name: Sporophytic chromosome number (minimum)
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000081
+name: Sporophytic chromosome number (mean)
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000082
+name: Karyotype
+def: "A collection of features used to describe the chromosomal complement in a cell, including the number of chromosomes and their morphology." []
+property_value: dcterms:contributor https://orcid.org/0000-0002-0179-1153
+property_value: dcterms:contributor https://orcid.org/0000-0002-1284-3115
+property_value: dcterms:contributor https://orcid.org/0000-0002-3112-0000
+property_value: dcterms:contributor https://orcid.org/0000-0002-3143-0527
+property_value: dcterms:contributor https://orcid.org/0000-0002-3515-729X
+property_value: dcterms:contributor https://orcid.org/0000-0002-3780-5748
+property_value: dcterms:contributor https://orcid.org/0000-0002-4651-3704
+property_value: dcterms:contributor https://orcid.org/0000-0002-5708-1433
+property_value: dcterms:contributor https://orcid.org/0000-0003-1148-631X
+property_value: dcterms:contributor https://orcid.org/0000-0003-1480-0976
+property_value: dcterms:contributor https://orcid.org/0000-0003-4441-9615
+
+[Term]
+id: TOSO:0000083
+name: Karyotype feature
+def: "A feature that can be used to describe a karyotype" []
+is_a: TOSO:0000099 ! Karyotype
+
+[Term]
+id: TOSO:0000084
+name: Chromosome number
+is_a: TOSO:0000083 ! Karyotype feature
+
+[Term]
+id: TOSO:0000085
+name: Female chromosome number
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000086
+name: Male chromosome number
+is_a: TOSO:0000084 ! Chromosome number
+
+[Term]
+id: TOSO:0000087
+name: Ploidy
+xref: PATO:0001374
+is_a: TOSO:0000083 ! Karyotype feature
+
+[Term]
+id: TOSO:0000088
+name: Predicted ploidy
+is_a: TOSO:0000083 ! Karyotype feature
+
+[Term]
+id: TOSO:0000089
 name: Chromosome
 xref: PLANA:0002021
 
 [Term]
-id: TOSO:0000012
+id: TOSO:0000090
 name: Nuclear chromosome
 xref: GO:0000228
-is_a: TOSO:0000011 ! Chromosome
+is_a: TOSO:0000089 ! Chromosome
 
 [Term]
-id: TOSO:0000013
+id: TOSO:0000091
+name: B chromosome
+is_a: TOSO:0000090 ! Nuclear chromosome
+
+[Term]
+id: TOSO:0000092
 name: Sex chromosome
-is_a: TOSO:0000012 ! Nuclear chromosome
+is_a: TOSO:0000090 ! Nuclear chromosome
 
 [Term]
-id: TOSO:0000014
+id: TOSO:0000093
 name: X chromosome
-is_a: TOSO:0000013 ! Sex chromosome
+is_a: TOSO:0000092 ! Sex chromosome
 
 [Term]
-id: TOSO:0000015
+id: TOSO:0000094
 name: Y chromosome
-is_a: TOSO:0000013 ! Sex chromosome
+is_a: TOSO:0000092 ! Sex chromosome
 
 [Term]
-id: TOSO:0000016
+id: TOSO:0000095
 name: Z chromosome
-is_a: TOSO:0000013 ! Sex chromosome
+is_a: TOSO:0000092 ! Sex chromosome
 
 [Term]
-id: TOSO:0000017
+id: TOSO:0000096
 name: W chromosome
-is_a: TOSO:0000013 ! Sex chromosome
+is_a: TOSO:0000092 ! Sex chromosome
 
 [Term]
-id: TOSO:0000018
+id: TOSO:0000097
 name: U chromosome
-is_a: TOSO:0000013 ! Sex chromosome
+is_a: TOSO:0000092 ! Sex chromosome
 
 [Term]
-id: TOSO:0000019
+id: TOSO:0000098
 name: V chromosome
-is_a: TOSO:0000013 ! Sex chromosome
+is_a: TOSO:0000092 ! Sex chromosome
 
 [Term]
-id: TOSO:0000020
+id: TOSO:0000099
 name: Karyotype
 xref: GENO:0000644
 
 [Term]
-id: TOSO:0000021
+id: TOSO:0000100
 name: Sex chromosome karyotype
+is_a: TOSO:0000099 ! Karyotype
 
 [Term]
-id: TOSO:0000022
+id: TOSO:0000101
 name: ZO
-is_a: TOSO:0000021 ! Sex chromosome karyotype
+is_a: TOSO:0000100 ! Sex chromosome karyotype
 
 [Term]
-id: TOSO:0000023
+id: TOSO:0000102
 name: ZW
-is_a: TOSO:0000021 ! Sex chromosome karyotype
+is_a: TOSO:0000100 ! Sex chromosome karyotype
 
 [Term]
-id: TOSO:0000024
+id: TOSO:0000103
 name: XY
-is_a: TOSO:0000021 ! Sex chromosome karyotype
+is_a: TOSO:0000100 ! Sex chromosome karyotype
 
 [Term]
-id: TOSO:0000025
+id: TOSO:0000104
 name: XO
-is_a: TOSO:0000021 ! Sex chromosome karyotype
+is_a: TOSO:0000100 ! Sex chromosome karyotype
 
 [Term]
-id: TOSO:0000026
+id: TOSO:0000105
 name: WO
-is_a: TOSO:0000021 ! Sex chromosome karyotype
+is_a: TOSO:0000100 ! Sex chromosome karyotype
 
 [Term]
-id: TOSO:0000027
+id: TOSO:0000106
 name: Complex sex chromosome karyotype
-is_a: TOSO:0000021 ! Sex chromosome karyotype
+is_a: TOSO:0000100 ! Sex chromosome karyotype
 
 [Term]
-id: TOSO:0000028
+id: TOSO:0000107
 name: Complex XY
-is_a: TOSO:0000027 ! Complex sex chromosome karyotype
+is_a: TOSO:0000106 ! Complex sex chromosome karyotype
 
 [Term]
-id: TOSO:0000029
+id: TOSO:0000108
 name: Complex ZW
-is_a: TOSO:0000027 ! Complex sex chromosome karyotype
+is_a: TOSO:0000106 ! Complex sex chromosome karyotype
 
 [Term]
-id: TOSO:0000030
-name: Sex chromosome morphology
-is_a: TOSO:0000005 ! Karyotype feature
+id: TOSO:0000109
+name: Sex chromosome karyotype morphology
+is_a: TOSO:0000083 ! Karyotype feature
 
 [Term]
-id: TOSO:0000031
-name: homomorphic
-is_a: TOSO:0000030 ! Sex chromosome morphology
+id: TOSO:0000110
+name: Homomorphic
+is_a: TOSO:0000109 ! Sex chromosome karyotype morphology
 
 [Term]
-id: TOSO:0000032
-name: heteromorphic
-is_a: TOSO:0000030 ! Sex chromosome morphology
+id: TOSO:0000111
+name: Heteromorphic
+is_a: TOSO:0000109 ! Sex chromosome karyotype morphology
 
 [Term]
-id: TOSO:0000033
+id: TOSO:0000112
 name: Sex chromosome system
 
 [Term]
-id: TOSO:0000034
-name: heterogamety
-is_a: TOSO:0000033 ! Sex chromosome system
+id: TOSO:0000113
+name: Heterogamety
+is_a: TOSO:0000112 ! Sex chromosome system
 
 [Term]
-id: TOSO:0000035
-name: male heterogamety
-is_a: TOSO:0000033 ! Sex chromosome system
+id: TOSO:0000114
+name: Male heterogamety
+is_a: TOSO:0000112 ! Sex chromosome system
 
 [Term]
-id: TOSO:0000036
-name: female heterogamety
-is_a: TOSO:0000033 ! Sex chromosome system
-
-[Term]
-id: TOSO:0000037
-name: Sexual system characteristic
-
-[Term]
-id: TOSO:0000038
-name: hermaphrodite
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000039
-name: monoecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000040
-name: dioecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000041
-name: gynodioecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000042
-name: androdioecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000043
-name: gynomonoecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000044
-name: andromonoecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000045
-name: polygamodioecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000046
-name: polygamomonoecy
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000047
-name: apomictic
-xref: OMIT:0027849
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000048
-name: gonochorous
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000049
-name: hermaphrodite
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000050
-name: parthenogenetic
-xref: OMIT:0011307
-is_a: TOSO:0000037 ! Sexual system characteristic
-
-[Term]
-id: TOSO:0000051
-name: sex determination
-
-[Term]
-id: TOSO:0000052
-name: Genotypic sex determination
-is_a: TOSO:0000051 ! sex determination
-
-[Term]
-id: TOSO:0000053
-name: GSD
-xref: GSSO:000108
-is_a: TOSO:0000051 ! sex determination
-
-[Term]
-id: TOSO:0000054
-name: male heterogametic sex determination
-is_a: TOSO:0000052 ! Genotypic sex determination
-
-[Term]
-id: TOSO:0000055
-name: female heterogametic sex determination
-is_a: TOSO:0000052 ! Genotypic sex determination
-
-[Term]
-id: TOSO:0000056
-name: polygenic
-xref: GENO:0000932
-is_a: TOSO:0000052 ! Genotypic sex determination
-
-[Term]
-id: TOSO:0000057
-name: Haplodiploidy
-xref: GSSO:000121
-is_a: TOSO:0000052 ! Genotypic sex determination
-
-[Term]
-id: TOSO:0000058
-name: arrhenotoky
-is_a: TOSO:0000057 ! Haplodiploidy
-
-[Term]
-id: TOSO:0000059
-name: paternal genome elimination
-is_a: TOSO:0000057 ! Haplodiploidy
-
-[Term]
-id: TOSO:0000060
-name: Environmental sex determination (ESD)
-is_a: TOSO:0000051 ! sex determination
-
-[Term]
-id: TOSO:0000061
-name: Temperature-dependent sex determination (TSD)
-is_a: TOSO:0000060 ! Environmental sex determination (ESD)
-
-[Term]
-id: TOSO:0000062
-name: Temperature-dependent sex determination (TSD Ia; MF)
-is_a: TOSO:0000061 ! Temperature-dependent sex determination (TSD)
-
-[Term]
-id: TOSO:0000063
-name: Temperature-dependent sex determination (TSD Ib; FM)
-is_a: TOSO:0000061 ! Temperature-dependent sex determination (TSD)
-
-[Term]
-id: TOSO:0000064
-name: Temperature-dependent sex determination (TSD II; MFM)
-is_a: TOSO:0000061 ! Temperature-dependent sex determination (TSD)
-
-[Term]
-id: TOSO:0000065
-name: Complex temperature-dependent sex determination (Complex TSD)
-is_a: TOSO:0000061 ! Temperature-dependent sex determination (TSD)
-
-[Term]
-id: TOSO:0000066
-name: Size-dependent sex determination
-xref: NCIT:C25681|NCIT\:C45781
-is_a: TOSO:0000060 ! Environmental sex determination (ESD)
-
-[Term]
-id: TOSO:0000067
-name: Density-dependent sex determination
-is_a: TOSO:0000060 ! Environmental sex determination (ESD)
-
-[Term]
-id: TOSO:0000068
-name: pH-dependent sex determination
-xref: NCIT:C45997
-is_a: TOSO:0000060 ! Environmental sex determination (ESD)
-
-[Term]
-id: TOSO:0000069
-name: Polyfactorial sex determination
-xref: null
-is_a: TOSO:0000051 ! sex determination
-
-[Term]
-id: TOSO:0000070
-name: Molecular type of sex determination
-
-[Term]
-id: TOSO:0000071
-name: dosage
-is_a: TOSO:0000070 ! Molecular type of sex determination
-
-[Term]
-id: TOSO:0000072
-name: Y dominant
-is_a: TOSO:0000070 ! Molecular type of sex determination
-
-[Term]
-id: TOSO:0000073
-name: W dominant
-is_a: TOSO:0000070 ! Molecular type of sex determination
-
-[Term]
-id: TOSO:0000074
-name: Hybrid
-
-[Term]
-id: TOSO:0000075
-name: Selfing ability
-
-[Term]
-id: TOSO:0000076
-name: Self incompatible
-is_a: TOSO:0000075 ! Selfing ability
-
-[Term]
-id: TOSO:0000077
-name: Self compatible
-is_a: TOSO:0000075 ! Selfing ability
-
-[Term]
-id: TOSO:0000078
-name: Growth Form
-
-[Term]
-id: TOSO:0000079
-name: Herb
-is_a: TOSO:0000078 ! Growth Form
-
-[Term]
-id: TOSO:0000080
-name: Shrub
-is_a: TOSO:0000078 ! Growth Form
-
-[Term]
-id: TOSO:0000081
-name: Tree
-is_a: TOSO:0000078 ! Growth Form
-
-[Term]
-id: TOSO:0000082
-name: Herbaceous vine,
-is_a: TOSO:0000078 ! Growth Form
-
-[Term]
-id: TOSO:0000083
-name: Liana or woody vine
-is_a: TOSO:0000078 ! Growth Form
-
-[Term]
-id: TOSO:0000084
-name: Woodiness
-
-[Term]
-id: TOSO:0000085
-name: W woodiness
-is_a: TOSO:0000084 ! Woodiness
-
-[Term]
-id: TOSO:0000086
-name: H woodiness
-is_a: TOSO:0000084 ! Woodiness
-
-[Term]
-id: TOSO:0000087
-name: variable woodiness
-is_a: TOSO:0000084 ! Woodiness
-
-[Term]
-id: TOSO:0000088
-name: Woodiness count
-is_a: TOSO:0000084 ! Woodiness
-
-[Term]
-id: TOSO:0000089
-name: Life form
-
-[Term]
-id: TOSO:0000090
-name: annual
-is_a: TOSO:0000089 ! Life form
-
-[Term]
-id: TOSO:0000091
-name: perennial
-is_a: TOSO:0000089 ! Life form
-
-[Term]
-id: TOSO:0000092
-name: Gametophytic chromosome number
-is_a: TOSO:0000006 ! Chromosome number
-
-[Term]
-id: TOSO:0000093
-name: Sporophytic chromosome number
-is_a: TOSO:0000006 ! Chromosome number
-
-[Term]
-id: TOSO:0000094
-name: Gametophytic chromosome number (minimum)
-is_a: TOSO:0000006 ! Chromosome number
-
-[Term]
-id: TOSO:0000095
-name: Gametophytic chromosome number (mean)
-is_a: TOSO:0000006 ! Chromosome number
-
-[Term]
-id: TOSO:0000096
-name: Sporophytic chromosome number (minimum)
-is_a: TOSO:0000006 ! Chromosome number
-
-[Term]
-id: TOSO:0000097
-name: Sporophytic chromosome number (mean)
-is_a: TOSO:0000006 ! Chromosome number
+id: TOSO:0000115
+name: Female heterogamety
+is_a: TOSO:0000112 ! Sex chromosome system
 

@@ -9,12 +9,12 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/toso/toso-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/toso/releases/2026-05-15/toso-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/toso/releases/2026-05-18/toso-base.owl"/>
         <dce:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <dcterms:description xml:lang="en">The Tree of Sex ontology covers any trait related to reproduction included in the Tree of Sex database</dcterms:description>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
         <dcterms:title>Tree of Sex ontology</dcterms:title>
-        <owl:versionInfo>2026-05-15</owl:versionInfo>
+        <owl:versionInfo>2026-05-18</owl:versionInfo>
     </owl:Ontology>
     
 

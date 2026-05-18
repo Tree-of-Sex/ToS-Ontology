@@ -7,8 +7,8 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://purl.obolibrary.org/obo/toso/components/core.owl>
-<http://purl.obolibrary.org/obo/toso/releases/2026-04-07/components/core.owl>
-Annotation(owl:versionInfo "2026-04-07")
+<http://purl.obolibrary.org/obo/toso/releases/2026-05-18/components/core.owl>
+Annotation(owl:versionInfo "2026-05-18")
 
 Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000001>))
 Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000002>))
@@ -107,7 +107,29 @@ Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000094>))
 Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000095>))
 Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000096>))
 Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000097>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000098>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000099>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000100>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000101>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000102>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000103>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000104>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000105>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000106>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000107>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000108>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000109>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000110>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000111>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000112>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000113>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000114>))
+Declaration(Class(<http://w3id.org/toso/vocab/TOSO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000233>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/contributor>))
 Declaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#hasDbXref>))
+Declaration(Datatype(xsd:anyUri))
 
 
 ############################
@@ -126,473 +148,693 @@ AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000002> "Family
 
 AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000003> "Genus")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000004> (species)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000004> (Species)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000004> "species")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000004> "Species")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000005> (Karyotype feature)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000005> (Reproductive quality)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000005> "Karyotype feature")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000005> "An organismal quality inhering in a bearer by virtue of the bearer's ability to produce new life or offspring.")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000005> "PATO:0001434")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000005> "Reproductive quality")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000006> (Chromosome number)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000006> (Sexual system)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000006> "Chromosome number")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000006> "Morphological pattern of sex allocation or distribution of male and female function across individuals in a species.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000006> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000006> <https://orcid.org/0000-0001-5370-2370>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000006> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000006> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000006> "Sexual system")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000006> <http://w3id.org/toso/vocab/TOSO_0000005>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000007> (Female chromosome number)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000007> (Hermaphroditism)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000007> "Female chromosome number")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000007> "A sexual system where both male and female sex organs are present.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000007> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000007> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0002-3515-729X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0002-5984-6815>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0002-6085-3908>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0002-8378-8168>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000007> <https://orcid.org/0000-0003-4441-9615>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000007> "Hermaphroditism")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000007> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000008> (Male chromosome number)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000008> (Simultaneous hermaphroditism)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000008> "Male chromosome number")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000008> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000008> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000008> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000008> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000008> "Simultaneous hermaphroditism")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000008> <http://w3id.org/toso/vocab/TOSO_0000007>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000009> (Ploidy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000009> (Sequential hermaphroditism)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000009> "PATO:0001374")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000009> "Ploidy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000009> <http://w3id.org/toso/vocab/TOSO_0000005>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000009> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000009> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000009> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000009> "Sequential hermaphroditism")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000009> <http://w3id.org/toso/vocab/TOSO_0000007>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000010> (Predicted ploidy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000010> (bidirectional sex-change)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000010> "Predicted ploidy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000010> <http://w3id.org/toso/vocab/TOSO_0000005>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000010> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000010> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000010> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000010> "bidirectional sex-change")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000010> <http://w3id.org/toso/vocab/TOSO_0000009>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000011> (Chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000011> (protandry)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000011> "PLANA:0002021")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000011> "Chromosome")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000011> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000011> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000011> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000011> "protandry")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000011> <http://w3id.org/toso/vocab/TOSO_0000009>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000012> (Nuclear chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000012> (protogyny)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000012> "GO:0000228")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000012> "Nuclear chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000012> <http://w3id.org/toso/vocab/TOSO_0000011>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000012> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000012> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000012> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000012> "protogyny")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000012> <http://w3id.org/toso/vocab/TOSO_0000009>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000013> (Sex chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000013> (Obligate hermaphroditism)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000013> "Sex chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000013> <http://w3id.org/toso/vocab/TOSO_0000012>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000013> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000013> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000013> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000013> "Obligate hermaphroditism")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000013> <http://w3id.org/toso/vocab/TOSO_0000007>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000014> (X chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000014> (Facultative hermaphroditism)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000014> "X chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000014> <http://w3id.org/toso/vocab/TOSO_0000013>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000014> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000014> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/99"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000014> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000014> "Facultative hermaphroditism")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000014> <http://w3id.org/toso/vocab/TOSO_0000007>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000015> (Y chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000015> (Monoecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000015> "Y chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000015> <http://w3id.org/toso/vocab/TOSO_0000013>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000015> "A sexual system in which plants have separate male and female flowers on the same plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000015> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/14"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000015> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000015> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000015> <https://orcid.org/0000-0001-8778-2110>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000015> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000015> <https://orcid.org/0000-0002-6085-3908>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000015> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000015> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000015> "Monoecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000015> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000016> (Z chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000016> (Dioecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000016> "Z chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000016> <http://w3id.org/toso/vocab/TOSO_0000013>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000016> "A sexual system of plants in which all individuals in a population are either female or male.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000016> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/25"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000016> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000016> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000016> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000016> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000016> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000016> "Dioecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000016> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000017> (W chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000017> (Gonochorism)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000017> "W chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000017> <http://w3id.org/toso/vocab/TOSO_0000013>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000017> "A sexual system in which anisogamous (different) gametes are produced in separate individuals.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000017> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/25"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000017> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000017> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000017> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000017> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000017> "Gonochorism")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000017> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000018> (U chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000018> (Gynodioecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000018> "U chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000018> <http://w3id.org/toso/vocab/TOSO_0000013>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000018> "A sexual system in which females and hermaphroditic plants coexist in the same population.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000018> " https://github.com/Tree-of-Sex/ToS-Ontology/issues/12"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000018> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000018> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000018> <https://orcid.org/0000-0002-6085-3908>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000018> <https://orcid.org/0000-0002-6789-6564>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000018> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000018> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000018> "GSSO:011873")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000018> "Gynodioecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000018> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000019> (V chromosome)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000019> (Androdioecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000019> "V chromosome")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000019> <http://w3id.org/toso/vocab/TOSO_0000013>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000019> "A sexual system in which males and hermaphrodites coexist in a population.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000019> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/33"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000019> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000019> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/92"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000019> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000019> <https://orcid.org/0000-0002-8487-9248>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000019> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000019> "GSSO:011874")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000019> "Androdioecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000019> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000020> (Karyotype)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000020> (Gynomonoecy)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000020> "GENO:0000644")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000020> "Karyotype")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000020> "A sexual system in which female and hermaphrodite flowers are present within a plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000020> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000020> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000020> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000020> <https://orcid.org/0000-0002-8378-8168>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000020> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000020> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000020> "Gynomonoecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000020> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000021> (Sex chromosome karyotype)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000021> (Andromonoecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000021> "Sex chromosome karyotype")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000021> "A sexual system in which in which male and hermaphrodite flowers are present within a plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000021> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000021> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/39"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000021> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000021> <https://orcid.org/0000-0001-8949-7479>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000021> <https://orcid.org/0000-0002-8378-8168>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000021> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000021> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000021> "Andromonoecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000021> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000022> (ZO)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000022> (Polygamodioecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000022> "ZO")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000022> <http://w3id.org/toso/vocab/TOSO_0000021>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000022> "A sexual system in which male, female, and hermaphrodite plants present in a population.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000022> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000022> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000022> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/62"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000022> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000022> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000022> <https://orcid.org/0000-0003-1701-3978>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000022> "Polygamodioecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000022> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000023> (ZW)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000023> (Polygamomonoecy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000023> "ZW")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000023> <http://w3id.org/toso/vocab/TOSO_0000021>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000023> "A sexual system in which male, female, and hermaphrodite flowers are present within a plant.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000023> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000023> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000023> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000023> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000023> <https://orcid.org/0000-0003-1701-3978>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000023> "GSSO:011864")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000023> "Polygamomonoecy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000023> <http://w3id.org/toso/vocab/TOSO_0000006>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000024> (XY)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000024> (Asexual system)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000024> "XY")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000024> <http://w3id.org/toso/vocab/TOSO_0000021>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000024> <https://orcid.org/0000-0003-1470-5450>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000024> "Asexual system")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000024> <http://w3id.org/toso/vocab/TOSO_0000005>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000025> (XO)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000025> (Apomixis)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000025> "XO")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000025> <http://w3id.org/toso/vocab/TOSO_0000021>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000025> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000025> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000025> "OMIT:0027849")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000025> "Apomixis")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000025> <http://w3id.org/toso/vocab/TOSO_0000024>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000026> (WO)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000026> (Parthenogenesis)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000026> "WO")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000026> <http://w3id.org/toso/vocab/TOSO_0000021>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000026> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000026> "OMIT:0011307")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000026> "Parthenogenesis")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000026> <http://w3id.org/toso/vocab/TOSO_0000024>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000027> (Complex sex chromosome karyotype)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000027> (Obligate parthenogenesis)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000027> "Complex sex chromosome karyotype")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000027> <http://w3id.org/toso/vocab/TOSO_0000021>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000027> "Obligate parthenogenesis")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000027> <http://w3id.org/toso/vocab/TOSO_0000026>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000028> (Complex XY)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000028> (Gynogenesis)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000028> "Complex XY")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000028> <http://w3id.org/toso/vocab/TOSO_0000027>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000028> "Gynogenesis")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000028> <http://w3id.org/toso/vocab/TOSO_0000024>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000029> (Complex ZW)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000029> (Hermaphrodite)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000029> "Complex ZW")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000029> <http://w3id.org/toso/vocab/TOSO_0000027>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000029> "A quality where both male and female sex organs are present in a biological entity ")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000029> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000029> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000029> "Hermaphrodite")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000030> (Sex chromosome morphology)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000030> (Hermaphrodite individual)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000030> "Sex chromosome morphology")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000030> <http://w3id.org/toso/vocab/TOSO_0000005>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000030> "Individual that contains both male and female sex organs.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000030> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000030> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000030> "Hermaphrodite individual")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000030> <http://w3id.org/toso/vocab/TOSO_0000029>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000031> (homomorphic)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000031> (Hermaphrodite flower)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000031> "homomorphic")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000031> <http://w3id.org/toso/vocab/TOSO_0000030>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000031> "Flower that contains both male and female sex organs")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000031> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000031> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000031> "Hermaphrodite flower")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000031> <http://w3id.org/toso/vocab/TOSO_0000029>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000032> (heteromorphic)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000032> (Gynomonoecious indivudual)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000032> "heteromorphic")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000032> <http://w3id.org/toso/vocab/TOSO_0000030>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000032> "A hermaphrodite (individual) with both female (part) flowers and hermpahrodite (part) flowers on the same plant")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000032> "Gynomonoecious indivudual")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000032> <http://w3id.org/toso/vocab/TOSO_0000029>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000033> (Sex chromosome system)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000034> (Gonochorous)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000033> "Sex chromosome system")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000034> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/37"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000034> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000034> "Gonochorous")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000034> (heterogamety)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000035> (Parthenogenetic)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000034> "heterogamety")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000034> <http://w3id.org/toso/vocab/TOSO_0000033>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000035> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/41"^^xsd:anyUri)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000035> "Parthenogenetic")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000035> (male heterogamety)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000036> (Sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000035> "male heterogamety")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000035> <http://w3id.org/toso/vocab/TOSO_0000033>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000036> "Sex determination")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000036> (female heterogamety)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000037> (Genotypic sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000036> "female heterogamety")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000036> <http://w3id.org/toso/vocab/TOSO_0000033>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000037> "GSSO:000108")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000037> "Genotypic sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000037> <http://w3id.org/toso/vocab/TOSO_0000036>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000037> (Sexual system characteristic)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000038> (Male heterogametic sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000037> "Sexual system characteristic")
-
-# Class: <http://w3id.org/toso/vocab/TOSO_0000038> (hermaphrodite)
-
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000038> "hermaphrodite")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000038> "Male heterogametic sex determination")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000038> <http://w3id.org/toso/vocab/TOSO_0000037>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000039> (monoecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000039> (Female heterogametic sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000039> "monoecy")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000039> "Female heterogametic sex determination")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000039> <http://w3id.org/toso/vocab/TOSO_0000037>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000040> (dioecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000040> (Polygenic)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000040> "dioecy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000040> "GENO:0000932")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000040> "Polygenic")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000040> <http://w3id.org/toso/vocab/TOSO_0000037>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000041> (gynodioecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000041> (Haplodiploidy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000041> "gynodioecy")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000041> "GSSO:000121")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000041> "Haplodiploidy")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000041> <http://w3id.org/toso/vocab/TOSO_0000037>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000042> (androdioecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000042> (Arrhenotoky)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000042> "androdioecy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000042> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000042> "Arrhenotoky")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000042> <http://w3id.org/toso/vocab/TOSO_0000041>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000043> (gynomonoecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000043> (Paternal genome elimination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000043> "gynomonoecy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000043> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000043> "Paternal genome elimination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000043> <http://w3id.org/toso/vocab/TOSO_0000041>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000044> (andromonoecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000044> (Environmental sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000044> "andromonoecy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000044> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000044> "Environmental sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000044> <http://w3id.org/toso/vocab/TOSO_0000036>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000045> (polygamodioecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000045> (Temperature-dependent sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000045> "polygamodioecy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000045> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000045> "Temperature-dependent sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000045> <http://w3id.org/toso/vocab/TOSO_0000044>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000046> (polygamomonoecy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000046> (Temperature-dependent sex determination (TSD Ia; MF))
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000046> "polygamomonoecy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000046> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000046> "Temperature-dependent sex determination (TSD Ia; MF)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000046> <http://w3id.org/toso/vocab/TOSO_0000045>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000047> (apomictic)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000047> (Temperature-dependent sex determination (TSD Ib; FM))
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000047> "OMIT:0027849")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000047> "apomictic")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000047> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000047> "Temperature-dependent sex determination (TSD Ib; FM)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000047> <http://w3id.org/toso/vocab/TOSO_0000045>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000048> (gonochorous)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000048> (Temperature-dependent sex determination (TSD II; MFM))
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000048> "gonochorous")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000048> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000048> "Temperature-dependent sex determination (TSD II; MFM)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000048> <http://w3id.org/toso/vocab/TOSO_0000045>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000049> (hermaphrodite)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000049> (Complex temperature-dependent sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000049> "hermaphrodite")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000049> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000049> "Complex temperature-dependent sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000049> <http://w3id.org/toso/vocab/TOSO_0000045>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000050> (parthenogenetic)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000050> (Size-dependent sex determination)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000050> "OMIT:0011307")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000050> "parthenogenetic")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000050> <http://w3id.org/toso/vocab/TOSO_0000037>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000050> "NCIT:C25681|NCIT:C45781")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000050> "Size-dependent sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000050> <http://w3id.org/toso/vocab/TOSO_0000044>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000051> (sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000051> (Density-dependent sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000051> "sex determination")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000051> "Density-dependent sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000051> <http://w3id.org/toso/vocab/TOSO_0000044>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000052> (Genotypic sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000052> (PH-dependent sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000052> "Genotypic sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000052> <http://w3id.org/toso/vocab/TOSO_0000051>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000052> "NCIT:C45997")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000052> "PH-dependent sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000052> <http://w3id.org/toso/vocab/TOSO_0000044>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000053> (GSD)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000053> (Polyfactorial sex determination)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000053> "GSSO:000108")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000053> "GSD")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000053> <http://w3id.org/toso/vocab/TOSO_0000051>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000053> "null")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000053> "Polyfactorial sex determination")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000053> <http://w3id.org/toso/vocab/TOSO_0000036>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000054> (male heterogametic sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000054> (Molecular type of sex determination)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000054> "male heterogametic sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000054> <http://w3id.org/toso/vocab/TOSO_0000052>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000054> "Molecular type of sex determination")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000055> (female heterogametic sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000055> (Dosage)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000055> "female heterogametic sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000055> <http://w3id.org/toso/vocab/TOSO_0000052>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000055> "Dosage")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000055> <http://w3id.org/toso/vocab/TOSO_0000054>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000056> (polygenic)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000056> (Y dominant)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000056> "GENO:0000932")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000056> "polygenic")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000056> <http://w3id.org/toso/vocab/TOSO_0000052>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000056> "Y dominant")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000056> <http://w3id.org/toso/vocab/TOSO_0000054>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000057> (Haplodiploidy)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000057> (W dominant)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000057> "GSSO:000121")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000057> "Haplodiploidy")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000057> <http://w3id.org/toso/vocab/TOSO_0000052>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000057> "W dominant")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000057> <http://w3id.org/toso/vocab/TOSO_0000054>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000058> (arrhenotoky)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000058> (Hybrid)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000058> "arrhenotoky")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000058> <http://w3id.org/toso/vocab/TOSO_0000057>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000058> "Hybrid")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000059> (paternal genome elimination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000059> (Selfing ability)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000059> "paternal genome elimination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000059> <http://w3id.org/toso/vocab/TOSO_0000057>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000059> "Selfing ability")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000060> (Environmental sex determination (ESD))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000060> (Self incompatible)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000060> "Environmental sex determination (ESD)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000060> <http://w3id.org/toso/vocab/TOSO_0000051>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000060> "Self incompatible")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000060> <http://w3id.org/toso/vocab/TOSO_0000059>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000061> (Temperature-dependent sex determination (TSD))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000061> (Self compatible)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000061> "Temperature-dependent sex determination (TSD)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000061> <http://w3id.org/toso/vocab/TOSO_0000060>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000061> "Self compatible")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000061> <http://w3id.org/toso/vocab/TOSO_0000059>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000062> (Temperature-dependent sex determination (TSD Ia; MF))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000062> (Growth Form)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000062> "Temperature-dependent sex determination (TSD Ia; MF)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000062> <http://w3id.org/toso/vocab/TOSO_0000061>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000062> "Growth Form")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000063> (Temperature-dependent sex determination (TSD Ib; FM))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000063> (Herb)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000063> "Temperature-dependent sex determination (TSD Ib; FM)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000063> <http://w3id.org/toso/vocab/TOSO_0000061>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000063> "Herb")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000063> <http://w3id.org/toso/vocab/TOSO_0000062>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000064> (Temperature-dependent sex determination (TSD II; MFM))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000064> (Shrub)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000064> "Temperature-dependent sex determination (TSD II; MFM)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000064> <http://w3id.org/toso/vocab/TOSO_0000061>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000064> "Shrub")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000064> <http://w3id.org/toso/vocab/TOSO_0000062>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000065> (Complex temperature-dependent sex determination (Complex TSD))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000065> (Tree)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000065> "Complex temperature-dependent sex determination (Complex TSD)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000065> <http://w3id.org/toso/vocab/TOSO_0000061>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000065> "Tree")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000065> <http://w3id.org/toso/vocab/TOSO_0000062>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000066> (Size-dependent sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000066> (Herbaceous vine,)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000066> "NCIT:C25681|NCIT:C45781")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000066> "Size-dependent sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000066> <http://w3id.org/toso/vocab/TOSO_0000060>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000066> "Herbaceous vine,")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000066> <http://w3id.org/toso/vocab/TOSO_0000062>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000067> (Density-dependent sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000067> (Liana or woody vine)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000067> "Density-dependent sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000067> <http://w3id.org/toso/vocab/TOSO_0000060>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000067> "Liana or woody vine")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000067> <http://w3id.org/toso/vocab/TOSO_0000062>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000068> (pH-dependent sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000068> (Woodiness)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000068> "NCIT:C45997")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000068> "pH-dependent sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000068> <http://w3id.org/toso/vocab/TOSO_0000060>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000068> "Woodiness")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000069> (Polyfactorial sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000069> (W woodiness)
 
-AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000069> "null")
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000069> "Polyfactorial sex determination")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000069> <http://w3id.org/toso/vocab/TOSO_0000051>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000069> "W woodiness")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000069> <http://w3id.org/toso/vocab/TOSO_0000068>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000070> (Molecular type of sex determination)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000070> (H woodiness)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000070> "Molecular type of sex determination")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000070> "H woodiness")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000070> <http://w3id.org/toso/vocab/TOSO_0000068>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000071> (dosage)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000071> (Variable woodiness)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000071> "dosage")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000071> <http://w3id.org/toso/vocab/TOSO_0000070>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000071> "Variable woodiness")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000071> <http://w3id.org/toso/vocab/TOSO_0000068>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000072> (Y dominant)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000072> (Woodiness count)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000072> "Y dominant")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000072> <http://w3id.org/toso/vocab/TOSO_0000070>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000072> "Woodiness count")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000072> <http://w3id.org/toso/vocab/TOSO_0000068>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000073> (W dominant)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000073> (Life form)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000073> "W dominant")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000073> <http://w3id.org/toso/vocab/TOSO_0000070>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000073> "Life form")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000074> (Hybrid)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000074> (Annual)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000074> "Hybrid")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000074> "Annual")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000074> <http://w3id.org/toso/vocab/TOSO_0000073>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000075> (Selfing ability)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000075> (Perennial)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000075> "Selfing ability")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000075> "Perennial")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000075> <http://w3id.org/toso/vocab/TOSO_0000073>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000076> (Self incompatible)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000076> (Gametophytic chromosome number)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000076> "Self incompatible")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000076> <http://w3id.org/toso/vocab/TOSO_0000075>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000076> "Gametophytic chromosome number")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000076> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000077> (Self compatible)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000077> (Sporophytic chromosome number)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000077> "Self compatible")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000077> <http://w3id.org/toso/vocab/TOSO_0000075>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000077> "Sporophytic chromosome number")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000077> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000078> (Growth Form)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000078> (Gametophytic chromosome number (minimum))
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000078> "Growth Form")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000078> "Gametophytic chromosome number (minimum)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000078> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000079> (Herb)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000079> (Gametophytic chromosome number (mean))
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000079> "Herb")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000079> <http://w3id.org/toso/vocab/TOSO_0000078>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000079> "Gametophytic chromosome number (mean)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000079> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000080> (Shrub)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000080> (Sporophytic chromosome number (minimum))
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000080> "Shrub")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000080> <http://w3id.org/toso/vocab/TOSO_0000078>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000080> "Sporophytic chromosome number (minimum)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000080> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000081> (Tree)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000081> (Sporophytic chromosome number (mean))
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000081> "Tree")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000081> <http://w3id.org/toso/vocab/TOSO_0000078>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000081> "Sporophytic chromosome number (mean)")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000081> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000082> (Herbaceous vine,)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000082> (Karyotype)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000082> "Herbaceous vine,")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000082> <http://w3id.org/toso/vocab/TOSO_0000078>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000082> "A collection of features used to describe the chromosomal complement in a cell, including the number of chromosomes and their morphology.")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000233> <http://w3id.org/toso/vocab/TOSO_0000082> "https://github.com/Tree-of-Sex/ToS-Ontology/issues/8"^^xsd:anyUri)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-0179-1153>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-1284-3115>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-3112-0000>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-3143-0527>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-3515-729X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-3780-5748>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-4651-3704>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0002-5708-1433>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0003-1148-631X>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0003-1480-0976>)
+AnnotationAssertion(<http://purl.org/dc/terms/contributor> <http://w3id.org/toso/vocab/TOSO_0000082> <https://orcid.org/0000-0003-4441-9615>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000082> "Karyotype")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000083> (Liana or woody vine)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000083> (Karyotype feature)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000083> "Liana or woody vine")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000083> <http://w3id.org/toso/vocab/TOSO_0000078>)
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <http://w3id.org/toso/vocab/TOSO_0000083> "A feature that can be used to describe a karyotype")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000083> "Karyotype feature")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000083> <http://w3id.org/toso/vocab/TOSO_0000099>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000084> (Woodiness)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000084> (Chromosome number)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000084> "Woodiness")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000084> "Chromosome number")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000084> <http://w3id.org/toso/vocab/TOSO_0000083>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000085> (W woodiness)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000085> (Female chromosome number)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000085> "W woodiness")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000085> "Female chromosome number")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000085> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000086> (H woodiness)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000086> (Male chromosome number)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000086> "H woodiness")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000086> "Male chromosome number")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000086> <http://w3id.org/toso/vocab/TOSO_0000084>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000087> (variable woodiness)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000087> (Ploidy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000087> "variable woodiness")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000087> <http://w3id.org/toso/vocab/TOSO_0000084>)
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000087> "PATO:0001374")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000087> "Ploidy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000087> <http://w3id.org/toso/vocab/TOSO_0000083>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000088> (Woodiness count)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000088> (Predicted ploidy)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000088> "Woodiness count")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000088> <http://w3id.org/toso/vocab/TOSO_0000084>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000088> "Predicted ploidy")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000088> <http://w3id.org/toso/vocab/TOSO_0000083>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000089> (Life form)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000089> (Chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000089> "Life form")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000089> "PLANA:0002021")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000089> "Chromosome")
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000090> (annual)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000090> (Nuclear chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000090> "annual")
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000090> "GO:0000228")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000090> "Nuclear chromosome")
 SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000090> <http://w3id.org/toso/vocab/TOSO_0000089>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000091> (perennial)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000091> (B chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000091> "perennial")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000091> <http://w3id.org/toso/vocab/TOSO_0000089>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000091> "B chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000091> <http://w3id.org/toso/vocab/TOSO_0000090>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000092> (Gametophytic chromosome number)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000092> (Sex chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000092> "Gametophytic chromosome number")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000092> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000092> "Sex chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000092> <http://w3id.org/toso/vocab/TOSO_0000090>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000093> (Sporophytic chromosome number)
+# Class: <http://w3id.org/toso/vocab/TOSO_0000093> (X chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000093> "Sporophytic chromosome number")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000093> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000093> "X chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000093> <http://w3id.org/toso/vocab/TOSO_0000092>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000094> (Gametophytic chromosome number (minimum))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000094> (Y chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000094> "Gametophytic chromosome number (minimum)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000094> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000094> "Y chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000094> <http://w3id.org/toso/vocab/TOSO_0000092>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000095> (Gametophytic chromosome number (mean))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000095> (Z chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000095> "Gametophytic chromosome number (mean)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000095> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000095> "Z chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000095> <http://w3id.org/toso/vocab/TOSO_0000092>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000096> (Sporophytic chromosome number (minimum))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000096> (W chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000096> "Sporophytic chromosome number (minimum)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000096> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000096> "W chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000096> <http://w3id.org/toso/vocab/TOSO_0000092>)
 
-# Class: <http://w3id.org/toso/vocab/TOSO_0000097> (Sporophytic chromosome number (mean))
+# Class: <http://w3id.org/toso/vocab/TOSO_0000097> (U chromosome)
 
-AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000097> "Sporophytic chromosome number (mean)")
-SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000097> <http://w3id.org/toso/vocab/TOSO_0000006>)
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000097> "U chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000097> <http://w3id.org/toso/vocab/TOSO_0000092>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000098> (V chromosome)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000098> "V chromosome")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000098> <http://w3id.org/toso/vocab/TOSO_0000092>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000099> (Karyotype)
+
+AnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#hasDbXref> <http://w3id.org/toso/vocab/TOSO_0000099> "GENO:0000644")
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000099> "Karyotype")
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000100> (Sex chromosome karyotype)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000100> "Sex chromosome karyotype")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000100> <http://w3id.org/toso/vocab/TOSO_0000099>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000101> (ZO)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000101> "ZO")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000101> <http://w3id.org/toso/vocab/TOSO_0000100>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000102> (ZW)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000102> "ZW")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000102> <http://w3id.org/toso/vocab/TOSO_0000100>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000103> (XY)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000103> "XY")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000103> <http://w3id.org/toso/vocab/TOSO_0000100>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000104> (XO)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000104> "XO")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000104> <http://w3id.org/toso/vocab/TOSO_0000100>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000105> (WO)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000105> "WO")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000105> <http://w3id.org/toso/vocab/TOSO_0000100>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000106> (Complex sex chromosome karyotype)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000106> "Complex sex chromosome karyotype")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000106> <http://w3id.org/toso/vocab/TOSO_0000100>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000107> (Complex XY)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000107> "Complex XY")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000107> <http://w3id.org/toso/vocab/TOSO_0000106>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000108> (Complex ZW)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000108> "Complex ZW")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000108> <http://w3id.org/toso/vocab/TOSO_0000106>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000109> (Sex chromosome karyotype morphology)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000109> "Sex chromosome karyotype morphology")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000109> <http://w3id.org/toso/vocab/TOSO_0000083>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000110> (Homomorphic)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000110> "Homomorphic")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000110> <http://w3id.org/toso/vocab/TOSO_0000109>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000111> (Heteromorphic)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000111> "Heteromorphic")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000111> <http://w3id.org/toso/vocab/TOSO_0000109>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000112> (Sex chromosome system)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000112> "Sex chromosome system")
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000113> (Heterogamety)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000113> "Heterogamety")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000113> <http://w3id.org/toso/vocab/TOSO_0000112>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000114> (Male heterogamety)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000114> "Male heterogamety")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000114> <http://w3id.org/toso/vocab/TOSO_0000112>)
+
+# Class: <http://w3id.org/toso/vocab/TOSO_0000115> (Female heterogamety)
+
+AnnotationAssertion(rdfs:label <http://w3id.org/toso/vocab/TOSO_0000115> "Female heterogamety")
+SubClassOf(<http://w3id.org/toso/vocab/TOSO_0000115> <http://w3id.org/toso/vocab/TOSO_0000112>)
 
 
 )
